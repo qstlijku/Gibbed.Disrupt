@@ -539,6 +539,14 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                     {
                         writer.WriteAttributeString("name", fieldDef.Name);
                     }
+                    else if (kv.Key == 0x1063B98A)
+                    {
+                        writer.WriteAttributeString("name", "text_AnimID");
+                    }
+                    else if (kv.Key == 0x641EEF6F)
+                    {
+                        writer.WriteAttributeString("name", "text_MoveBlendID");
+                    }
                     else
                     {
                         writer.WriteAttributeString("hash", kv.Key.ToString("X8"));
@@ -546,8 +554,24 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
 
                     if (fieldDef == null)
                     {
-                        writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.BinHex));
-                        writer.WriteBinHex(kv.Value, 0, kv.Value.Length);
+                        if (kv.Key == 0x1063B98A || kv.Key == 0x641EEF6F)
+                        {
+                            writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.String));
+                            FieldHandling.Export(
+                                fieldDef,
+                                FieldType.String,
+                                FieldType.Invalid,
+                                kv.Value,
+                                0,
+                                kv.Value.Length,
+                                writer,
+                                out _);
+                        }
+                        else
+                        {
+                            writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.BinHex));
+                            writer.WriteBinHex(kv.Value, 0, kv.Value.Length);
+                        }
                     }
                     else
                     {
