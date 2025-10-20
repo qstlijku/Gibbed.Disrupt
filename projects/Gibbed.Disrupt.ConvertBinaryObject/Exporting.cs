@@ -547,14 +547,26 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                     {
                         writer.WriteAttributeString("name", "text_MoveBlendID");
                     }
+                    else if (kv.Key == 0x81D483EF)
+                    {
+                        writer.WriteAttributeString("name", "text_MoveStateID");
+                    }
+                    else if (kv.Key == 0x33144E70)
+                    {
+                        writer.WriteAttributeString("name", "text_PMSValue");
+                    }
                     else
                     {
                         writer.WriteAttributeString("hash", kv.Key.ToString("X8"));
                     }
 
+                    // Fields: 0xEC1E98BF or 0xFBB9B1D9
+                    // hard code nodes for offsets for now
+                    // add .Equals to BinaryObject
+
                     if (fieldDef == null)
                     {
-                        if (kv.Key == 0x1063B98A || kv.Key == 0x641EEF6F)
+                        if (kv.Key == 0x1063B98A || kv.Key == 0x641EEF6F || kv.Key == 0x81D483EF || kv.Key == 0x33144E70)
                         {
                             writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.String));
                             FieldHandling.Export(
