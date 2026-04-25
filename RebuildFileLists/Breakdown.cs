@@ -29,7 +29,7 @@ namespace RebuildFileLists
         public long Known = 0;
         public long Total = 0;
 
-        public int Percent
+        public float Percent
         {
             get
             {
@@ -38,8 +38,7 @@ namespace RebuildFileLists
                     return 0;
                 }
 
-                return (int)Math.Floor(((float)this.Known /
-                                        (float)this.Total) * 100.0);
+                return ((float)this.Known / (float)this.Total) * 100.0f;
             }
         }
 
