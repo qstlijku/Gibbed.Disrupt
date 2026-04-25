@@ -132,9 +132,11 @@ namespace Gibbed.Disrupt.FileFormats
                 { 0x222783FD41714328ul, 0xFFFF0053u },
                 { 0xB41205BE7C6928C6ul, 0xFFFF0054u },
                 { 0xDF326521AB6C1246ul, 0xFFFF0055u },
+                /*
                 { 0x43BF1ED948DA7970ul, 0xFFFF00C8u },
                 { 0x7D3F78A7EE2F35F7ul, 0xFFFF00C9u },
                 { 0x035200779DBBFE8Ful, 0xFFFF00CAu },
+                */
                 { 0x5C5497EB23458E13ul, 0xFFFF01F4u },
                 { 0x28942F8BD278FE88ul, 0xFFFF01F5u },
                 { 0x0B166253861447DCul, 0xFFFF01F6u },
