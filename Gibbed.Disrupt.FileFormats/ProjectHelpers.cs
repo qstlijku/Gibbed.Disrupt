@@ -137,6 +137,7 @@ namespace Gibbed.Disrupt.FileFormats
                 { 0x7D3F78A7EE2F35F7ul, 0xFFFF00C9u },
                 { 0x035200779DBBFE8Ful, 0xFFFF00CAu },
                 */
+                { 0x17860DC07BD54FFBul, 0xFFFF012Eu }, // worlds\windy_city\generated\roadresources\roadres_0000000034b0cbcc.hgfx
                 { 0x5C5497EB23458E13ul, 0xFFFF01F4u },
                 { 0x28942F8BD278FE88ul, 0xFFFF01F5u },
                 { 0x0B166253861447DCul, 0xFFFF01F6u },
