@@ -7,3 +7,6 @@ bin/*.pdb
 */obj/Debug/
 */obj/Release/
 */obj/x86/
+*.dat
+*.fat
+*/*_unpack
