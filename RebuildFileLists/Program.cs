@@ -180,14 +180,15 @@ namespace RebuildFileLists
                               outputPath);
             }
 
+            var finalBreakdown = new Breakdown()
+            {
+                Known = tracking.Names.Distinct().Count(),
+                Total = tracking.Hashes.Distinct().Count(),
+            };
+            Console.WriteLine("{0}", finalBreakdown);
             using (var output = new StreamWriter(Path.Combine(Path.Combine(listsPath, "files"), "status.txt")))
             {
-                output.WriteLine("{0}",
-                                 new Breakdown()
-                                 {
-                                     Known = tracking.Names.Distinct().Count(),
-                                     Total = tracking.Hashes.Distinct().Count(),
-                                 });
+                output.WriteLine("{0}", finalBreakdown);
             }
         }
 
