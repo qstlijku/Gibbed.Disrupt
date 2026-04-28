@@ -43,7 +43,7 @@ namespace Gibbed.Disrupt.FileFormats
             {
                 { 0xFFFF0000u, @"domino\user\windycity\family_missions\act_04\family_02\a04_f02.a04_f02.lua" },
                 { 0xFFFF0001u, @"domino\user\windycity\family_missions\act_04\family_02\a04_f02.a04_f02.debug.lua" },
-                { 0xFFFF012Eu, @"worlds\windy_city\generated\roadresources\roadres_0000000034b0cbcc.hgfx" },
+                //{ 0xFFFF012Eu, @"worlds\windy_city\generated\roadresources\roadres_0000000034b0cbcc.hgfx" },
             };
 
             _KnownHashOverrideLookup = overrides.ToDictionary(kv => BaseHasher(kv.Value), kv => kv.Key);

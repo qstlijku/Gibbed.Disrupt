@@ -190,6 +190,7 @@ namespace RebuildFileLists
             {
                 output.WriteLine("{0}", finalBreakdown);
             }
+            Console.ReadKey();
         }
 
         private static void HandleEntries(IEnumerable<uint> entries,
