@@ -22,6 +22,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Xml.XPath;
@@ -153,161 +154,244 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                 infoManager = BinaryObjectInfo.InfoManager.Load(project.ListsPath);
             }
 
-            if (mode == Mode.Import)
-            {
-                string inputPath = extras[0];
-                string outputPath;
+            // Expand a wildcard input (e.g. "libs\*.lib") into a list of matching files.
+            List<string> inputPaths;
+            string explicitOutputPath = null;
 
+            if (extras[0].IndexOfAny(new[] { '*', '?' }) >= 0)
+            {
                 if (extras.Count > 1)
                 {
-                    outputPath = extras[1];
+                    Console.WriteLine("Error: cannot specify an output path when the input uses a wildcard.");
+                    return;
                 }
-                else
+
+                var inputDir = Path.GetDirectoryName(extras[0]);
+                if (string.IsNullOrEmpty(inputDir))
                 {
-                    outputPath = RemoveConverted(Path.ChangeExtension(inputPath, null));
-                    if (string.IsNullOrEmpty(Path.GetExtension(outputPath)))
+                    inputDir = ".";
+                }
+                var pattern = Path.GetFileName(extras[0]);
+
+                if (!Directory.Exists(inputDir))
+                {
+                    Console.WriteLine("Error: directory not found: {0}", inputDir);
+                    return;
+                }
+
+                inputPaths = new List<string>(Directory.GetFiles(inputDir, pattern));
+                inputPaths.Sort(StringComparer.OrdinalIgnoreCase);
+
+                if (inputPaths.Count == 0)
+                {
+                    Console.WriteLine("No files matched: {0}", extras[0]);
+                    return;
+                }
+
+                Console.WriteLine("Batch: {0} file(s) match '{1}'", inputPaths.Count, extras[0]);
+            }
+            else
+            {
+                inputPaths = new List<string> { extras[0] };
+                if (extras.Count > 1)
+                {
+                    explicitOutputPath = extras[1];
+                }
+            }
+
+            string cliBaseName = baseName;
+            int succeeded = 0;
+            int failed = 0;
+            int total = inputPaths.Count;
+            int padding = total.ToString(CultureInfo.InvariantCulture).Length;
+
+            for (int fileIndex = 0; fileIndex < inputPaths.Count; fileIndex++)
+            {
+                var currentInput = inputPaths[fileIndex];
+
+                if (inputPaths.Count > 1)
+                {
+                    Console.WriteLine("[{0}/{1}] {2}",
+                                      (fileIndex + 1).ToString(CultureInfo.InvariantCulture).PadLeft(padding),
+                                      total,
+                                      Path.GetFileName(currentInput));
+                }
+
+                try
+                {
+                    baseName = cliBaseName;
+
+                    if (mode == Mode.Import)
                     {
-                        var filename = Path.GetFileName(outputPath);
-                        if (new Regex(@".+_[0-9a-fA-F]{8}").IsMatch(filename))
+                        string inputPath = currentInput;
+                        string outputPath;
+
+                        if (explicitOutputPath != null)
                         {
-                            outputPath += ".obj";
+                            outputPath = explicitOutputPath;
                         }
                         else
                         {
-                            outputPath += ".lib";
+                            outputPath = RemoveConverted(Path.ChangeExtension(inputPath, null));
+                            if (string.IsNullOrEmpty(Path.GetExtension(outputPath)))
+                            {
+                                var filename = Path.GetFileName(outputPath);
+                                if (new Regex(@".+_[0-9a-fA-F]{8}").IsMatch(filename))
+                                {
+                                    outputPath += ".obj";
+                                }
+                                else
+                                {
+                                    outputPath += ".lib";
+                                }
+                            }
+                        }
+
+                        // Twice to remove *.lib.xml
+                        var basePath = Path.ChangeExtension(Path.ChangeExtension(inputPath, null), null);
+
+                        inputPath = Path.GetFullPath(inputPath);
+                        outputPath = Path.GetFullPath(outputPath);
+                        basePath = Path.GetFullPath(basePath);
+
+                        var bof = new BinaryObjectFile();
+
+                        using (var input = File.OpenRead(inputPath))
+                        {
+                            var doc = new XPathDocument(input);
+                            var nav = doc.CreateNavigator();
+
+                            var root = nav.SelectSingleNode("/object");
+                            if (root == null)
+                            {
+                                throw new FormatException();
+                            }
+
+                            if (string.IsNullOrEmpty(baseName))
+                            {
+                                var baseNameFromObject = root.GetAttribute("def", "");
+                                if (!string.IsNullOrEmpty(baseNameFromObject))
+                                {
+                                    baseName = baseNameFromObject;
+                                }
+                                else
+                                {
+                                    baseName = GetBaseNameFromPath(inputPath);
+                                }
+                            }
+
+                            if (verbose)
+                            {
+                                Console.WriteLine("Reading XML...");
+                            }
+
+                            var objectFileDef = infoManager.GetObjectFileDefinition(baseName);
+                            if (objectFileDef == null)
+                            {
+                                Console.WriteLine("Warning: could not find binary object file definition '{0}'", baseName);
+                            }
+
+                            var importing = new Importing(infoManager);
+
+                            var classDef = objectFileDef != null ? objectFileDef.Object : null;
+                            bof.Root = importing.Import(classDef, basePath, root);
+                        }
+
+                        if (verbose)
+                        {
+                            Console.WriteLine("Writing FCB...");
+                        }
+
+                        using (var output = File.Create(outputPath))
+                        {
+                            bof.Serialize(output);
                         }
                     }
-                }
-
-                // Twice to remove *.lib.xml
-                var basePath = Path.ChangeExtension(Path.ChangeExtension(inputPath, null), null);
-
-                inputPath = Path.GetFullPath(inputPath);
-                outputPath = Path.GetFullPath(outputPath);
-                basePath = Path.GetFullPath(basePath);
-
-                var bof = new BinaryObjectFile();
-
-                using (var input = File.OpenRead(inputPath))
-                {
-                    var doc = new XPathDocument(input);
-                    var nav = doc.CreateNavigator();
-
-                    var root = nav.SelectSingleNode("/object");
-                    if (root == null)
+                    else if (mode == Mode.Export)
                     {
-                        throw new FormatException();
-                    }
+                        string inputPath = currentInput;
+                        string outputPath;
+                        string basePath;
 
-                    if (string.IsNullOrEmpty(baseName))
-                    {
-                        var baseNameFromObject = root.GetAttribute("def", "");
-                        if (!string.IsNullOrEmpty(baseNameFromObject))
+                        if (explicitOutputPath != null)
                         {
-                            baseName = baseNameFromObject;
+                            outputPath = explicitOutputPath;
+                            basePath = Path.ChangeExtension(outputPath, null);
                         }
                         else
+                        {
+                            basePath = Path.ChangeExtension(inputPath, null);
+                            outputPath = inputPath + ".xml";
+                        }
+
+                        if (string.IsNullOrEmpty(baseName))
                         {
                             baseName = GetBaseNameFromPath(inputPath);
                         }
+
+                        if (string.IsNullOrEmpty(baseName))
+                        {
+                            throw new InvalidOperationException();
+                        }
+
+                        inputPath = Path.GetFullPath(inputPath);
+                        outputPath = Path.GetFullPath(outputPath);
+                        basePath = Path.GetFullPath(basePath);
+
+                        var objectFileDef = infoManager.GetObjectFileDefinition(baseName);
+                        if (objectFileDef == null)
+                        {
+                            Console.WriteLine("Warning: could not find binary object file definition '{0}'", baseName);
+                        }
+
+                        if (verbose)
+                        {
+                            Console.WriteLine("Reading FCB...");
+                        }
+
+                        var bof = new BinaryObjectFile();
+                        using (var input = File.OpenRead(inputPath))
+                        {
+                            bof.Deserialize(input);
+                        }
+
+                        if (verbose)
+                        {
+                            Console.WriteLine("Writing XML...");
+                        }
+
+                        if (useMultiExporting && Exporting.IsSuitableForEntityLibraryMultiExport(bof))
+                        {
+                            Exporting.MultiExportEntityLibrary(objectFileDef, basePath, outputPath, infoManager, bof);
+                        }
+                        else if (useMultiExporting && Exporting.IsSuitableForLibraryMultiExport(bof))
+                        {
+                            Exporting.MultiExportLibrary(objectFileDef, basePath, outputPath, infoManager, bof);
+                        }
+                        else if (useMultiExporting && Exporting.IsSuitableForNomadObjectTemplatesMultiExport(bof))
+                        {
+                            Exporting.MultiExportNomadObjectTemplates(objectFileDef, basePath, outputPath, infoManager, bof);
+                        }
+                        else
+                        {
+                            Exporting.Export(objectFileDef, outputPath, infoManager, bof);
+                        }
                     }
 
-                    if (verbose)
-                    {
-                        Console.WriteLine("Reading XML...");
-                    }
+                    succeeded++;
 
-                    var objectFileDef = infoManager.GetObjectFileDefinition(baseName);
-                    if (objectFileDef == null)
-                    {
-                        Console.WriteLine("Warning: could not find binary object file definition '{0}'", baseName);
-                    }
-
-                    var importing = new Importing(infoManager);
-
-                    var classDef = objectFileDef != null ? objectFileDef.Object : null;
-                    bof.Root = importing.Import(classDef, basePath, root);
                 }
-
-                if (verbose)
+                catch (Exception ex)
                 {
-                    Console.WriteLine("Writing FCB...");
-                }
-
-                using (var output = File.Create(outputPath))
-                {
-                    bof.Serialize(output);
+                    failed++;
+                    Console.WriteLine("Failed: {0}", currentInput);
+                    Console.WriteLine("  {0}", ex.Message);
                 }
             }
-            else if (mode == Mode.Export)
+
+            if (inputPaths.Count > 1)
             {
-                string inputPath = extras[0];
-                string outputPath;
-                string basePath;
-
-                if (extras.Count > 1)
-                {
-                    outputPath = extras[1];
-                    basePath = Path.ChangeExtension(outputPath, null);
-                }
-                else
-                {
-                    basePath = Path.ChangeExtension(inputPath, null);
-                    outputPath = inputPath + ".xml";
-                }
-
-                if (string.IsNullOrEmpty(baseName))
-                {
-                    baseName = GetBaseNameFromPath(inputPath);
-                }
-
-                if (string.IsNullOrEmpty(baseName))
-                {
-                    throw new InvalidOperationException();
-                }
-
-                inputPath = Path.GetFullPath(inputPath);
-                outputPath = Path.GetFullPath(outputPath);
-                basePath = Path.GetFullPath(basePath);
-
-                var objectFileDef = infoManager.GetObjectFileDefinition(baseName);
-                if (objectFileDef == null)
-                {
-                    Console.WriteLine("Warning: could not find binary object file definition '{0}'", baseName);
-                }
-
-                if (verbose)
-                {
-                    Console.WriteLine("Reading FCB...");
-                }
-
-                var bof = new BinaryObjectFile();
-                using (var input = File.OpenRead(inputPath))
-                {
-                    bof.Deserialize(input);
-                }
-
-                if (verbose)
-                {
-                    Console.WriteLine("Writing XML...");
-                }
-
-                if (useMultiExporting && Exporting.IsSuitableForEntityLibraryMultiExport(bof))
-                {
-                    Exporting.MultiExportEntityLibrary(objectFileDef, basePath, outputPath, infoManager, bof);
-                }
-                else if (useMultiExporting && Exporting.IsSuitableForLibraryMultiExport(bof))
-                {
-                    Exporting.MultiExportLibrary(objectFileDef, basePath, outputPath, infoManager, bof);
-                }
-                else if (useMultiExporting && Exporting.IsSuitableForNomadObjectTemplatesMultiExport(bof))
-                {
-                    Exporting.MultiExportNomadObjectTemplates(objectFileDef, basePath, outputPath, infoManager, bof);
-                }
-                else
-                {
-                    Exporting.Export(objectFileDef, outputPath, infoManager, bof);
-                }
+                Console.WriteLine("Done: {0} succeeded, {1} failed.", succeeded, failed);
             }
         }
 
