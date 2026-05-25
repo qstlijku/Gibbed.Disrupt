@@ -46,7 +46,7 @@
 					<object name="MissionCriteria">
 						<object name="MissionCriteriaGroup">
 							<object name="MissionCriteria">
-								<field hash="DDA15F98" type="String"/>
+								<field name="text_criteriaMissionCriteriaType" type="String"/>
 								<field name="criteriaMissionCriteriaType" type="BinHex"/>
 								<object name="CriteriaParameters">
 									<field name="missionlistMissionID" type="BinHex"/>
@@ -84,7 +84,7 @@
 						</object>
 					</object>
 					<field name="fDenunciatorProbabilityFactor" type="Float"/>
-					<field hash="DF7777F2" type="String"/>
+					<field name="text_trackingcontextTrackingContext" type="String"/>
 					<field name="trackingcontextTrackingContext" type="BinHex"/>
 					<field name="bIsMobAmbush" type="Boolean"/>
 					<field name="entQuitSpawnPointId" type="BinHex"/>
@@ -92,7 +92,7 @@
 			</object>
 		</object>
 		<object name="TypePropertiesCategory">
-			<field hash="24C2BAE6" type="String"/>
+			<field name="text_typeMissionPropertiesType" type="String"/>
 			<field name="typeMissionPropertiesType" type="BinHex"/>
 			<object name="Values">
 				<field name="fileMissionActivationDominoScript" type="BinHex"/>

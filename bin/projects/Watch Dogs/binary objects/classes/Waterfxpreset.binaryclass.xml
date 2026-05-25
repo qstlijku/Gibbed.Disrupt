@@ -6,7 +6,7 @@
 	<field name="hidKey" type="BinHex"/>
 	<object name="Splash">
 		<field name="vectorSplashOffset" type="Vector3"/>
-		<field hash="0F5F0627" type="String"/>
+		<field name="text_psSplashResource" type="String"/>
 		<field name="psSplashResource" type="BinHex"/>
 	</object>
 	<object name="ShallowWater">

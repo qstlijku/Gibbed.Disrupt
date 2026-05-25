@@ -70,7 +70,7 @@
 		<field name="fSpeedIncrease" type="Float"/>
 	</object>
 	<object name="VisualSteering">
-		<field hash="43010E7E" type="String"/>
+		<field name="text_sMasterSteeredBone" type="String"/>
 		<field name="sMasterSteeredBone" type="BinHex"/>
 	</object>
 	<object name="RaceSettings">

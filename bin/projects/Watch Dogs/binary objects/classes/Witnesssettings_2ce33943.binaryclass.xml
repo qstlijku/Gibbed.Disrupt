@@ -11,7 +11,7 @@
 			<field name="fDelayBetween911andDenunciator" type="Float"/>
 			<field name="fDelayBetweenReactionAndDenunciator" type="Float"/>
 			<field name="fForceDenunciatorSearchRadius" type="Float"/>
-			<field hash="A7EC39BB" type="String"/>
+			<field name="text_sDefaultDenunciatorBark" type="String"/>
 			<field name="sDefaultDenunciatorBark" type="BinHex"/>
 			<field hash="AAC7E6AE" type="String"/>
 			<field name="sDenunciatorBarkFromDetector" type="BinHex"/>
@@ -28,11 +28,11 @@
 				</object>
 			</object>
 			<object name="DenunciatorGPSTexture">
-				<field hash="33E4567C" type="String"/>
+				<field name="text_fileIconTexture" type="String"/>
 				<field name="fileIconTexture" type="BinHex"/>
 			</object>
 			<object name="DenunciatorDisruptedGPSTexture">
-				<field hash="33E4567C" type="String"/>
+				<field name="text_fileIconTexture" type="String"/>
 				<field name="fileIconTexture" type="BinHex"/>
 			</object>
 			<object name="curveSinglePlayerWitnessHeatScale">
@@ -67,14 +67,14 @@
 			</object>
 			<object name="PMSValuesNeeded">
 				<object name="PMSValue">
-					<field hash="363F5FCE" type="String"/>
+					<field name="text_pmsPMSName" type="String"/>
 					<field name="pmsPMSName" type="BinHex"/>
 					<field name="selEnumValue" type="Enum"/>
 				</object>
 			</object>
 			<object name="PMSValuesExcluded">
 				<object name="PMSValue">
-					<field hash="363F5FCE" type="String"/>
+					<field name="text_pmsPMSName" type="String"/>
 					<field name="pmsPMSName" type="BinHex"/>
 					<field name="selEnumValue" type="Enum"/>
 				</object>
@@ -199,7 +199,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -321,7 +321,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -353,7 +353,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -415,7 +415,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -487,7 +487,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -509,7 +509,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -591,7 +591,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -633,7 +633,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -665,7 +665,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="fDistance" type="Float"/>
@@ -678,7 +678,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -760,7 +760,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -772,7 +772,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -854,7 +854,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -906,7 +906,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -978,7 +978,7 @@
 				<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
 				<field name="fDenunciatorMax" type="Int16"/>
 				<field name="fSafeDistance" type="Float"/>
-				<field hash="5DCA6216" type="String"/>
+				<field name="text_DenunciatorBark" type="String"/>
 				<field name="DenunciatorBark" type="BinHex"/>
 				<field name="bCheckThreatProximity" type="Boolean"/>
 				<field name="bCheckThreatInCar" type="Boolean"/>
@@ -1064,7 +1064,7 @@
 		<field name="iMinHackInterval" type="Int32"/>
 		<field name="iMaxHackInterval" type="Int32"/>
 		<object name="GPSTexture">
-			<field hash="33E4567C" type="String"/>
+			<field name="text_fileIconTexture" type="String"/>
 			<field name="fileIconTexture" type="BinHex"/>
 		</object>
 		<object name="ExcludedRewardItems">
@@ -1077,7 +1077,7 @@
 		</object>
 	</object>
 	<object name="DetectorSettings">
-		<field hash="995B332C" type="String"/>
+		<field name="text_Bark" type="String"/>
 		<field name="Bark" type="BinHex"/>
 		<field name="fDetectorDelay" type="Float"/>
 		<field name="fDistanceMaxToDetect" type="Float"/>
@@ -1088,7 +1088,7 @@
 		<field name="iGoodReputationDetectorProbability" type="Int32"/>
 		<field name="GoodRepBark" type="BinHex"/>
 		<object name="DetectorGPSTexture">
-			<field hash="33E4567C" type="String"/>
+			<field name="text_fileIconTexture" type="String"/>
 			<field name="fileIconTexture" type="BinHex"/>
 		</object>
 		<object name="HeatLevelSettings">
@@ -1110,14 +1110,14 @@
 		</object>
 		<object name="PMSValuesNeeded">
 			<object name="PMSValue">
-				<field hash="363F5FCE" type="String"/>
+				<field name="text_pmsPMSName" type="String"/>
 				<field name="pmsPMSName" type="BinHex"/>
 				<field name="selEnumValue" type="Enum"/>
 			</object>
 		</object>
 		<object name="PMSValuesExcluded">
 			<object name="PMSValue">
-				<field hash="363F5FCE" type="String"/>
+				<field name="text_pmsPMSName" type="String"/>
 				<field name="pmsPMSName" type="BinHex"/>
 				<field name="selEnumValue" type="Enum"/>
 			</object>

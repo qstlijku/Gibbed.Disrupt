@@ -4,7 +4,7 @@
 	<field name="text_hidName" type="String"/>
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
-    <field hash="91202B12" type="String" />
+    <field name="text_selClassName" type="String" />
     <field name="selClassName" />
     <object name="Properties">
         <field name="iMaxSeenOccurence" type="Int32" />
@@ -42,7 +42,7 @@
             <field name="fGameStartCooldownMin" type="Float" />
             <field name="fGameStartCooldownMax" type="Float" />
         </object>
-        <object hash="6DE2EE61">
+        <object name="Mix">
             <field name="sndStart" />
             <field name="sndStop" />
         </object>

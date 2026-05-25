@@ -6,6 +6,6 @@
 	<field name="hidKey" type="BinHex"/>
 	<field hash="826D06FE" type="String"/>
 	<field name="matPhoneScreenMaterial" type="BinHex"/>
-	<field hash="E0ED5CFB" type="String"/>
+	<field name="text_sMaterialSlot" type="String"/>
 	<field name="sMaterialSlot" type="BinHex"/>
 </class>

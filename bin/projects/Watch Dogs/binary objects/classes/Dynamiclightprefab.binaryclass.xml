@@ -5,7 +5,7 @@
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
 	<field name="selLightType" type="Enum"/>
-	<field hash="ACCA3298" type="BinHex"/>
+	<field name="bQuadraticAttenuation" type="BinHex"/>
 	<field name="bSpecular" type="Boolean"/>
 	<field hash="F532908C" type="BinHex"/>
 	<field name="bNeedsElectricPower" type="Boolean"/>
@@ -22,7 +22,7 @@
 	<field name="fCastShadowMaxDistance" type="Float"/>
 	<field name="fCastShadowFadeDistance" type="Float"/>
 	<field name="iShadowFadeFactorCurveIndex" type="Int32"/>
-	<field hash="304CE24D" type="BinHex"/>
+	<field name="bHighResShadowFiltering" type="BinHex"/>
 	<field name="fShadowDepthBiasScale" type="Float"/>
 	<field name="fShadowSlopeScaledDepthBiasScale" type="Float"/>
 	<field name="fileProjectedTexture" type="BinHex"/>
@@ -31,7 +31,7 @@
 	<field hash="CB7FE2AF" type="BinHex"/>
 	<field hash="E1C6E92F" type="BinHex"/>
 	<field hash="583B3275" type="BinHex"/>
-	<field hash="AD6D22CA" type="BinHex"/>
+	<field name="fSpecularIntensity" type="BinHex"/>
 	<field name="selPriority" type="Enum"/>
 	<field hash="232B2FEF" type="BinHex"/>
 	<field name="uiShadowGroup" type="Int64"/>

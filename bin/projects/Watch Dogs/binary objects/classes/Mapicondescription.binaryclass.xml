@@ -38,7 +38,7 @@
         <field name="LocalizationId" type="Int64"/>
     </object>
     <object name="PrimaryIconTexture">
-        <field hash="33E4567C" type="String"/>
+        <field name="text_fileIconTexture" type="String"/>
         <field name="fileIconTexture" type="BinHex"/>
     </object>
     <object name="Animations">

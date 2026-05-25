@@ -8,7 +8,7 @@
 	<field name="fTargetRadiusCff" type="Float"/>
 	<object name="HelpableAttractorsList">
 		<field name="bCivilian" type="Boolean"/>
-		<field hash="5270412C" type="BinHex"/>
+		<field name="bAI" type="BinHex"/>
 		<object name="Bank">
 			<object name="Entry">
 				<field name="attactAction" type="BinHex"/>
@@ -18,7 +18,7 @@
 	</object>
 	<object name="PileupAttractorsList">
 		<field name="bCivilian" type="Boolean"/>
-		<field hash="5270412C" type="BinHex"/>
+		<field name="bAI" type="BinHex"/>
 		<object name="Bank">
 			<object name="Entry">
 				<field name="attactAction" type="BinHex"/>

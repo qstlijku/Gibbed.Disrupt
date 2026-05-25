@@ -6,7 +6,7 @@
 	<field name="hidKey" type="BinHex"/>
 	<object name="ParticleEmitterParams">
 		<object name="ParticleEmitterParam">
-			<field hash="B4B54F24" type="String"/>
+			<field name="text_psParticleEmitter" type="String"/>
 			<field name="psParticleEmitter" type="BinHex"/>
 		</object>
 	</object>

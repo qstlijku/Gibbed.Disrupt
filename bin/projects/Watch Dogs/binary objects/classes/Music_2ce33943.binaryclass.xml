@@ -6,7 +6,7 @@
 	<field name="hidKey" type="BinHex"/>
 	<field hash="AE38A558" type="String"/>
 	<field name="fileAIWorkspace" type="BinHex"/>
-	<field hash="7BD7C5F5" type="BinHex"/>
+	<field name="text_sBehavior" type="BinHex"/>
 	<field name="sBehavior" type="BinHex"/>
 	<field name="sDefaultSet" type="String"/>
 	<field name="sndchMusicObjectsMultitrackChannel" type="BinHex"/>
@@ -20,7 +20,7 @@
 		</object>
 	</object>
 	<object name="Sets">
-		<object hash="DE59633C">
+		<object name="Set">
 			<field name="sName" type="String"/>
 			<object name="States">
 				<object name="State">

@@ -18,7 +18,7 @@
 	<object name="DynamicContent">
 		<field name="sndOnDisplay" type="BinHex"/>
 		<field name="sndOnInput" type="BinHex"/>
-		<field hash="10BF882E" type="String"/>
+		<field name="text_fileDynamicContentThumbnail" type="String"/>
 		<field name="fileDynamicContentThumbnail" type="BinHex"/>
 	</object>
 	<object name="Wheel">

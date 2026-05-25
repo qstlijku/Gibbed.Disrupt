@@ -7,7 +7,7 @@
 	<field name="selMaskType" type="Enum"/>
 	<object name="Poses">
 		<object name="Pose">
-			<field hash="97769D74" type="String"/>
+			<field name="text_Pose" type="String"/>
 			<field name="Pose" type="BinHex"/>
 		</object>
 	</object>

@@ -10,8 +10,8 @@
 				<field name="selTag" type="Enum"/>
 			</object>
 			<object name="PMSList">
-				<object hash="2448C6A4">
-					<field hash="363F5FCE" type="String"/>
+				<object name="PMS">
+					<field name="text_pmsPMSName" type="String"/>
 					<field name="pmsPMSName" type="BinHex"/>
 					<field name="selEnumValue" type="Enum"/>
 				</object>

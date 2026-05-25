@@ -4,7 +4,7 @@
 	<field name="text_hidName" type="String"/>
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
-	<field hash="183467EB" type="String"/>
+	<field name="text_gctxGameplayContextType" type="String"/>
 	<field name="gctxGameplayContextType" type="BinHex"/>
 	<object name="GameplayContext">
 		<field name="iPriority" type="Int32"/>
@@ -29,13 +29,13 @@
 			<field name="bEnablePowerIconDuringBlackout" type="Boolean"/>
 			<field name="bMapCtxDetectorStealth" type="Boolean"/>
 		</object>
-		<object hash="37B529F2">
+		<object name="HUD">
 			<field name="bShowMinimap" type="Boolean"/>
 			<field name="bEnablePowerComponent" type="Boolean"/>
 			<field name="bShowBattery" type="Boolean"/>
 			<field name="bShowSecondaryItem" type="Boolean"/>
 		</object>
-		<object hash="C24D1F4D">
+		<object name="GPS">
 			<field name="bNoneType" type="Boolean"/>
 			<field name="bStoryMission" type="Boolean"/>
 			<field name="bOptionalMission" type="Boolean"/>
@@ -45,11 +45,11 @@
 			<field name="bMinigames" type="Boolean"/>
 			<field name="bContact" type="Boolean"/>
 			<field name="bPlayer" type="Boolean"/>
-			<field hash="5270412C" type="BinHex"/>
+			<field name="bAI" type="BinHex"/>
 			<field name="bATM" type="Boolean"/>
 			<field name="bCompass" type="Boolean"/>
 			<field name="bMediaSystem" type="Boolean"/>
-			<field hash="90DE6233" type="BinHex"/>
+			<field name="bHQ" type="BinHex"/>
 			<field name="bHub" type="Boolean"/>
 			<field name="bStartRace" type="Boolean"/>
 			<field name="bDrivingJob" type="Boolean"/>

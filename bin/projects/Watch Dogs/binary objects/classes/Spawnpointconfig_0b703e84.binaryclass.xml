@@ -4,6 +4,6 @@
 	<field name="text_hidName" type="String"/>
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
-	<field hash="BB062B84" type="String"/>
+	<field name="text_archDefaultSpawnPointType" type="String"/>
 	<field name="archDefaultSpawnPointType" type="BinHex"/>
 </class>

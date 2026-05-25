@@ -6,10 +6,10 @@
 	<field name="hidKey" type="BinHex"/>
 	<field name="fLateralStiffness" type="Float"/>
 	<field name="fLongitudinalStiffness" type="Float"/>
-	<field hash="EAACFE62" type="BinHex"/>
-	<field hash="9DABCEF4" type="BinHex"/>
-	<field hash="03CF5B57" type="BinHex"/>
-	<field hash="74C86BC1" type="BinHex"/>
+	<field name="fB" type="BinHex"/>
+	<field name="fC" type="BinHex"/>
+	<field name="fD" type="BinHex"/>
+	<field name="fE" type="BinHex"/>
 	<field name="fLongitudinalFriction" type="Float"/>
 	<field name="fLateralFriction" type="Float"/>
 	<field name="bUseTyreStiffnessLoadDependency" type="Boolean"/>

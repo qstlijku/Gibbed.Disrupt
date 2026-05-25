@@ -211,7 +211,7 @@
 						</object>
 					</object>
 				</object>
-				<object hash="2EAB7254">
+				<object name="Yaw">
 					<field name="vec2ImpulsePeak" type="Vector2"/>
 					<field name="vec2ImpulseCurve" type="Vector2"/>
 					<field name="selImpulseDirection" type="Enum"/>
@@ -243,7 +243,7 @@
 						</object>
 					</object>
 				</object>
-				<object hash="2EAB7254">
+				<object name="Yaw">
 					<field name="vec2ImpulsePeak" type="Vector2"/>
 					<field name="vec2ImpulseCurve" type="Vector2"/>
 					<field name="selImpulseDirection" type="Enum"/>
@@ -282,7 +282,7 @@
 						</object>
 					</object>
 				</object>
-				<object hash="2EAB7254">
+				<object name="Yaw">
 					<field name="vec2ImpulsePeak" type="Vector2"/>
 					<field name="vec2ImpulseCurve" type="Vector2"/>
 					<field name="selImpulseDirection" type="Enum"/>
@@ -314,7 +314,7 @@
 						</object>
 					</object>
 				</object>
-				<object hash="2EAB7254">
+				<object name="Yaw">
 					<field name="vec2ImpulsePeak" type="Vector2"/>
 					<field name="vec2ImpulseCurve" type="Vector2"/>
 					<field name="selImpulseDirection" type="Enum"/>

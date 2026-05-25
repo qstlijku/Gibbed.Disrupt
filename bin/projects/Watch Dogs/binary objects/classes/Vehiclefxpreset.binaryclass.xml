@@ -5,7 +5,7 @@
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
 	<object name="Bollard">
-		<field hash="64EEFBF8" type="String"/>
+		<field name="text_psBollardTakedownFx" type="String"/>
 		<field name="psBollardTakedownFx" type="BinHex"/>
 		<field name="sBollardTakedownBoneName" type="BinHex"/>
 	</object>
@@ -14,7 +14,7 @@
 		<field name="fMaxEmitCoefficient" type="Float"/>
 		<field name="fMaxLifetimeCoefficient" type="Float"/>
 		<field name="fCurvePow" type="Float"/>
-		<field hash="56611662" type="String"/>
+		<field name="text_sDestroyedStateBoneName" type="String"/>
 		<field name="sDestroyedStateBoneName" type="BinHex"/>
 		<object name="DamageStates">
 			<object name="DamageState">
@@ -25,19 +25,19 @@
 				<field name="fPartsCollsionDamageScale" type="Float"/>
 				<object name="StateParticlesSystems">
 					<object name="StateParticlesSystem">
-						<field hash="9DFBFACC" type="String"/>
+						<field name="text_psParticlesSystemId" type="String"/>
 						<field name="psParticlesSystemId" type="BinHex"/>
-						<field hash="EA6128F3" type="String"/>
+						<field name="text_psParticlesSystemIdNoHood" type="String"/>
 						<field name="psParticlesSystemIdNoHood" type="BinHex"/>
-						<field hash="7617B9D5" type="String"/>
+						<field name="text_sBoneName" type="String"/>
 						<field name="sBoneName" type="BinHex"/>
 						<field name="vectorBoneRotationOffset" type="Vector3"/>
 					</object>
 				</object>
 				<object name="ConditionnalParticlesSystems">
-					<field hash="9DFBFACC" type="String"/>
+					<field name="text_psParticlesSystemId" type="String"/>
 					<field name="psParticlesSystemId" type="BinHex"/>
-					<field hash="7617B9D5" type="String"/>
+					<field name="text_sBoneName" type="String"/>
 					<field name="sBoneName" type="BinHex"/>
 					<field name="vectorBoneRotationOffset" type="Vector3"/>
 					<field name="sndSound" type="BinHex"/>
@@ -72,7 +72,7 @@
 		<object name="DestroyedStates">
 			<object name="DestroyedState">
 				<field name="fWeight" type="Float"/>
-				<field hash="ED42AABF" type="String"/>
+				<field name="text_psVehicleDestroyedFx" type="String"/>
 				<field name="psVehicleDestroyedFx" type="BinHex"/>
 				<field name="sndVehicleDestroyedSound" type="BinHex"/>
 				<field name="fChainExplosionMaxTimeDelay" type="Float"/>
@@ -82,9 +82,9 @@
 				<field name="fExceedingDmgFactor" type="Float"/>
 				<field name="fBurningChance" type="Float"/>
 				<field name="fBurningFadeOutTime" type="Float"/>
-				<field hash="B9AE3E20" type="String"/>
+				<field name="text_psEngineFireFx" type="String"/>
 				<field name="psEngineFireFx" type="BinHex"/>
-				<field hash="92D74D97" type="String"/>
+				<field name="text_psEngineFireNoHoodFx" type="String"/>
 				<field name="psEngineFireNoHoodFx" type="BinHex"/>
 				<field name="sndEngineFireSound" type="BinHex"/>
 				<field name="sndEngineFireNoHoodSound" type="BinHex"/>
@@ -93,19 +93,19 @@
 				<field name="fPreExplodeMinTime" type="Float"/>
 				<field name="fPreExplodeMaxTime" type="Float"/>
 				<field name="fPreExplodeTotalTime" type="Float"/>
-				<field hash="1287B4BE" type="String"/>
+				<field name="text_psExplosionFx" type="String"/>
 				<field name="psExplosionFx" type="BinHex"/>
-				<field hash="46FAC0A2" type="String"/>
+				<field name="text_psExplosionNoHoodFx" type="String"/>
 				<field name="psExplosionNoHoodFx" type="BinHex"/>
 				<field name="sndExplosionSound" type="BinHex"/>
 				<field name="sndExplosionNoHoodSound" type="BinHex"/>
-				<field hash="3A713497" type="String"/>
+				<field name="text_psDestroyByExplosionFx" type="String"/>
 				<field name="psDestroyByExplosionFx" type="BinHex"/>
-				<field hash="42EC7AED" type="String"/>
+				<field name="text_psDestroyByExplosionNoHoodFx" type="String"/>
 				<field name="psDestroyByExplosionNoHoodFx" type="BinHex"/>
 				<field name="sndDestroyByExplosionSound" type="BinHex"/>
 				<field name="sndDestroyByExplosionNoHoodSound" type="BinHex"/>
-				<field hash="4D6CF19D" type="String"/>
+				<field name="text_psPreExplosionFx" type="String"/>
 				<field name="psPreExplosionFx" type="BinHex"/>
 				<field name="sndPreExplosionSound" type="BinHex"/>
 				<object name="ReactionStims">
@@ -130,11 +130,11 @@
 		</object>
 	</object>
 	<object name="Exhaust">
-		<field hash="907AE14C" type="String"/>
+		<field name="text_psFxExhaust" type="String"/>
 		<field name="psFxExhaust" type="BinHex"/>
-		<field hash="31FF6250" type="String"/>
+		<field name="text_psFxGearshiftExhaust" type="String"/>
 		<field name="psFxGearshiftExhaust" type="BinHex"/>
-		<field hash="D16247F2" type="String"/>
+		<field name="text_psFxNitroExhaust" type="String"/>
 		<field name="psFxNitroExhaust" type="BinHex"/>
 		<object name="ExhaustSizeControl">
 			<field name="fRPMMin" type="Float"/>
@@ -158,7 +158,7 @@
 	<object name="Landing">
 		<object name="LandingParticlesSystem">
 			<field name="psParticlesSystemId" type="BinHex"/>
-			<field hash="7617B9D5" type="String"/>
+			<field name="text_sBoneName" type="String"/>
 			<field name="sBoneName" type="BinHex"/>
 		</object>
 	</object>
@@ -205,12 +205,12 @@
 		</object>
 	</object>
 	<object name="Tyre">
-		<field hash="D1EAE833" type="String"/>
+		<field name="text_psFxDeflateTyre" type="String"/>
 		<field name="psFxDeflateTyre" type="BinHex"/>
 	</object>
 	<object name="WaterSplash">
 		<field name="vectorFxWaterSplashOffset" type="Vector3"/>
-		<field hash="D6F35F0A" type="String"/>
+		<field name="text_psFxWaterSplash" type="String"/>
 		<field name="psFxWaterSplash" type="BinHex"/>
 		<field name="sndWheelInWater" type="BinHex"/>
 		<field name="fWheelsEnterWaterFadeoutTime" type="Float"/>
@@ -241,9 +241,9 @@
 	</object>
 	<object name="ConditionnalFx">
 		<object name="ConditionnalParticlesSystems">
-			<field hash="9DFBFACC" type="String"/>
+			<field name="text_psParticlesSystemId" type="String"/>
 			<field name="psParticlesSystemId" type="BinHex"/>
-			<field hash="7617B9D5" type="String"/>
+			<field name="text_sBoneName" type="String"/>
 			<field name="sBoneName" type="BinHex"/>
 			<field name="vectorBoneRotationOffset" type="Vector3"/>
 			<field name="sndSound" type="BinHex"/>

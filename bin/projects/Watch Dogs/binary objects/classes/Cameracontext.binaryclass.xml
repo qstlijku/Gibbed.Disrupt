@@ -16,7 +16,7 @@
 	<field name="vectorIdealSpeedCoef" type="Vector3"/>
 	<field name="fReticleDisplay" type="Float"/>
 	<field name="vec2ReticleLocation" type="Vector2"/>
-	<object hash="7EBF8F6B">
+	<object name="FOV">
 		<field name="vectorFov" type="Vector3"/>
 		<field name="vectorFovSpeedRange" type="Vector3"/>
 		<field name="fFovInterpSpeed" type="Float"/>
@@ -123,7 +123,7 @@
 		<field name="vectorOffsetMidBack" type="Vector3"/>
 		<field name="vectorOffsetMaxBack" type="Vector3"/>
 	</object>
-	<object hash="F390740B">
+	<object name="PoV">
 		<field name="vec2TargetMidOffset" type="Vector2"/>
 	</object>
 	<object name="Lens">

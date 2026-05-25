@@ -228,9 +228,9 @@
 		<field name="fTakedownRespawnDelay" type="Float"/>
 	</object>
 	<object name="Chopper">
-		<field hash="E7237599" type="String"/>
+		<field name="text_sArchetype" type="String"/>
 		<field name="sArchetype" type="BinHex"/>
-		<field hash="95B6EC2C" type="String"/>
+		<field name="text_sSniperArchetype" type="String"/>
 		<field name="sSniperArchetype" type="BinHex"/>
 		<field name="fRespawnOverride" type="Float"/>
 		<field name="bAllowCloseCombatFallback" type="Boolean"/>

@@ -6,13 +6,13 @@
 	<object name="kfgradSkyDomeColorSunOppositeSide">
 		<inherit name="CKeyFramedGradientColor" />
 	</object>
-	<object hash="CE0A71B0">
+	<object name="curveSkyDomeIntensity">
 		<inherit name="CCurveObj" />
 	</object>
-	<object hash="68FD64CC">
+	<object name="curveSunSpriteIntensity">
 		<inherit name="CCurveObj" />
 	</object>
-	<object hash="883BBFFA">
+	<object name="curveMoonSpriteIntensity">
 		<inherit name="CCurveObj" />
 	</object>
 </class>

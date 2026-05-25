@@ -13,14 +13,14 @@
 	<object name="HeadDetailTextures">
 		<object name="Texture">
 			<field name="DisplayName" type="String"/>
-			<field hash="1CB97581" type="String"/>
+			<field name="text_fileTexture" type="String"/>
 			<field name="fileTexture" type="BinHex"/>
 		</object>
 	</object>
 	<object name="ClothTextures">
 		<object name="Texture">
 			<field name="DisplayName" type="String"/>
-			<field hash="1CB97581" type="String"/>
+			<field name="text_fileTexture" type="String"/>
 			<field name="fileTexture" type="BinHex"/>
 		</object>
 	</object>

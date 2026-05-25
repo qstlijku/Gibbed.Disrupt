@@ -5,25 +5,25 @@
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
 	<field name="fileFireResource" type="String"/>
-	<field hash="FB84895E" type="String"/>
+	<field name="text_archTrailArchetype" type="String"/>
 	<field name="archTrailArchetype" type="BinHex"/>
 	<field name="fTrailSpeed" type="Float"/>
 	<field name="fDistanceFromCoinToStopTrail" type="Float"/>
 	<field name="fCameraSpeed" type="Float"/>
 	<field name="vectorCameraOffset" type="Vector3"/>
-	<field hash="04952257" type="String"/>
+	<field name="text_archCameraArchetype" type="String"/>
 	<field name="archCameraArchetype" type="BinHex"/>
-	<field hash="2BFA7C3B" type="String"/>
+	<field name="text_archCameraAnchor" type="String"/>
 	<field name="archCameraAnchor" type="BinHex"/>
-	<field hash="C392E678" type="String"/>
+	<field name="text_archStartingCoin" type="String"/>
 	<field name="archStartingCoin" type="BinHex"/>
-	<field hash="78E8820B" type="String"/>
+	<field name="text_archNormalSolidCoin" type="String"/>
 	<field name="archNormalSolidCoin" type="BinHex"/>
-	<field hash="334BCC04" type="String"/>
+	<field name="text_archNegativeCoin" type="String"/>
 	<field name="archNegativeCoin" type="BinHex"/>
-	<field hash="9AAE8CF6" type="String"/>
+	<field name="text_archPlatinumSolidCoin" type="String"/>
 	<field name="archPlatinumSolidCoin" type="BinHex"/>
-	<field hash="8E36CE1E" type="String"/>
+	<field name="text_archFinishingCoin" type="String"/>
 	<field name="archFinishingCoin" type="BinHex"/>
 	<field name="fMinimumLoadingDelay" type="Float"/>
 	<field name="fStartingCoinPickupDistance" type="Float"/>
@@ -35,7 +35,7 @@
 	<field name="fPlatinumCoinPickupDistanceVehicle" type="Float"/>
 	<field name="fPlatinumCoinTimeBonus" type="Float"/>
 	<field name="fNegativeCoinTimePenalty" type="Float"/>
-	<field hash="A0096CC6" type="BinHex"/>
+	<field name="fFinishCoinPickupDistanc" type="BinHex"/>
 	<field name="fCoinRotationSpeed" type="Float"/>
 	<field name="fNegativeCoinRotationSpeed" type="Float"/>
 	<field name="fCameraOrientationTime" type="Float"/>
@@ -52,33 +52,33 @@
 	</object>
 	<object name="CollectParticles">
 		<object name="CollectParticlesStartingCoin">
-			<field hash="60D2524D" type="String"/>
+			<field name="text_psResource" type="String"/>
 			<field name="psResource" type="BinHex"/>
 			<field name="vectorOffset" type="Vector3"/>
 		</object>
 		<object name="CollectParticlesNormalCoin">
-			<field hash="60D2524D" type="String"/>
+			<field name="text_psResource" type="String"/>
 			<field name="psResource" type="BinHex"/>
 			<field name="vectorOffset" type="Vector3"/>
 		</object>
 		<object name="CollectParticlesPlatinumCoin">
-			<field hash="60D2524D" type="String"/>
+			<field name="text_psResource" type="String"/>
 			<field name="psResource" type="BinHex"/>
 			<field name="vectorOffset" type="Vector3"/>
 		</object>
 		<object name="CollectParticlesNegativeCoin">
-			<field hash="60D2524D" type="String"/>
+			<field name="text_psResource" type="String"/>
 			<field name="psResource" type="BinHex"/>
 			<field name="vectorOffset" type="Vector3"/>
 		</object>
 		<object name="CollectParticlesFinishingCoin">
-			<field hash="60D2524D" type="String"/>
+			<field name="text_psResource" type="String"/>
 			<field name="psResource" type="BinHex"/>
 			<field name="vectorOffset" type="Vector3"/>
 		</object>
 	</object>
 	<object name="TrailParticles">
-		<field hash="60D2524D" type="String"/>
+		<field name="text_psResource" type="String"/>
 		<field name="psResource" type="BinHex"/>
 		<field name="vectorOffset" type="Vector3"/>
 	</object>
@@ -105,10 +105,10 @@
 		<field name="sndInGameMusic" type="BinHex"/>
 	</object>
 	<object name="VfxInformation">
-		<field hash="04E6CC8C" type="String"/>
+		<field name="text_fileTextureCameraNoise" type="String"/>
 		<field name="fileTextureCameraNoise" type="BinHex"/>
 		<field name="fileTextureColorRemap" type="BinHex"/>
-		<field hash="87278278" type="String"/>
+		<field name="text_fileTextureHitOverlay" type="String"/>
 		<field name="fileTextureHitOverlay" type="BinHex"/>
 		<field name="colorGreenChannelPostFxMaskHaloColor" type="Vector3"/>
 		<field name="colorGradingColor" type="Vector3"/>

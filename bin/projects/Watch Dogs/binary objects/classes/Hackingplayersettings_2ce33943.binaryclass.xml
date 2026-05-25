@@ -33,7 +33,7 @@
 	<field name="fNotoriousFixerConstant" type="Float"/>
 	<field hash="7494DD90" type="BinHex"/>
 	<object name="VictimProfileLineSettings">
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
 		<field name="fWorldOffset" type="Float"/>
 		<field name="fTimedLineDuration" type="Float"/>
@@ -49,7 +49,7 @@
 		</object>
 	</object>
 	<object name="VictimFleeProfileLineSettings">
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
 		<field name="fWorldOffset" type="Float"/>
 		<field name="fTimedLineDuration" type="Float"/>
@@ -75,7 +75,7 @@
 	</object>
 	<object name="CivilianSelectionPMSValuesExcluded">
 		<object name="PMSValue">
-			<field hash="363F5FCE" type="String"/>
+			<field name="text_pmsPMSName" type="String"/>
 			<field name="pmsPMSName" type="BinHex"/>
 			<field name="selEnumValue" type="Enum"/>
 		</object>

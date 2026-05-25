@@ -32,7 +32,7 @@
 	<field hash="143E659C" type="BinHex"/>
 	<field name="fNotoriousFixerConstant" type="Float"/>
 	<object name="TargetProfilerLineSettings">
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
 		<field name="fWorldOffset" type="Float"/>
 		<field name="fTimedLineDuration" type="Float"/>
@@ -48,7 +48,7 @@
 		</object>
 	</object>
 	<object name="TargetFleeLOSLineSettings">
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
 		<field name="fWorldOffset" type="Float"/>
 		<field name="fTimedLineDuration" type="Float"/>

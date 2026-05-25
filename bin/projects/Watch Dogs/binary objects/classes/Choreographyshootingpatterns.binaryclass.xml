@@ -43,6 +43,6 @@
 		<field name="fShotDelayMin" type="Float"/>
 		<field name="fShotDelayMax" type="Float"/>
 		<field name="fMaxLength" type="Float"/>
-		<field hash="8DFC2232" type="String"/>
+		<field name="sPatternName" type="String"/>
 	</object>
 </class>

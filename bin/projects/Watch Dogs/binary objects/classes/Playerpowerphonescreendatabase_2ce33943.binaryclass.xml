@@ -5,11 +5,11 @@
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
 	<field name="phonescreenmatDefaultPowerScreenMaterial" type="BinHex"/>
-	<field hash="5BBD5AE5" type="String"/>
+	<field name="text_sSlotToUseOnRemovingOverridingMaterial" type="String"/>
 	<field name="sSlotToUseOnRemovingOverridingMaterial" type="BinHex"/>
 	<object name="Relations">
 		<object name="Data">
-			<field hash="DE602D26" type="String"/>
+			<field name="text_pwrPowerName" type="String"/>
 			<field name="pwrPowerName" type="BinHex"/>
 			<field name="phonescreenmatMaterial" type="BinHex"/>
 		</object>

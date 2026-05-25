@@ -85,7 +85,7 @@
   <object hash="7C7CDD3B">
     <object hash="09DA31FB">
       <field name="hash" type="BinHex" />
-      <field hash="33144E70" type="String" />
+      <field name="text_PMSValue" type="String" />
       <field name="PMSValue" type="BinHex" />
     </object>
   </object>

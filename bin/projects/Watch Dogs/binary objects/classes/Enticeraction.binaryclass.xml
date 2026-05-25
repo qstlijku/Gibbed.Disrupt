@@ -42,7 +42,7 @@
     <object name="Identity">
         <field name="selGender" type="Enum"/>
         <field name="civbankCiviliansBank" type="BinHex"/>
-        <field hash="D8C7B5B6" type="String"/>
+        <field name="text_tmplDialogActor" type="String"/>
         <field name="tmplDialogActor" type="BinHex"/>
         <field name="dialactorlistDialogActorsList" type="BinHex"/>
         <object name="TagSpec">

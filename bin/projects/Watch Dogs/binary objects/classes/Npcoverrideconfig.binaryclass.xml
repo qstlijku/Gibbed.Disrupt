@@ -52,7 +52,7 @@
 		<field name="bAllowCapabilityToWatchDeadBody" type="Boolean"/>
 		<field name="bAllowCapabilityToTakeCover" type="Boolean"/>
 	</object>
-	<object hash="7EBF8F6B">
+	<object name="FOV">
 		<field name="bOverrideFOVDepthMultiplier" type="Boolean"/>
 		<field name="FOVDepthMultiplier" type="BinHex"/>
 	</object>

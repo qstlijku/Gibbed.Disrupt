@@ -10,7 +10,7 @@
 	</object>
 	<object name="Geometries">
 		<object name="Geometry">
-			<field hash="3182766C" type="String"/>
+			<field name="text_fileModel" type="String"/>
 			<field name="fileModel" type="BinHex"/>
 			<object name="Weight">
 				<field name="Normal" type="Float"/>

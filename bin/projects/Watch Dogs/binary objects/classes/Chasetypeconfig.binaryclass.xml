@@ -81,25 +81,25 @@
 	<object name="SoundArchetypes">
 		<object name="PilotArchetypes">
 			<object name="Pilot">
-				<field hash="E6655990" type="String"/>
+				<field name="text_archArchetype" type="String"/>
 				<field name="archArchetype" type="BinHex"/>
 			</object>
 		</object>
 		<object name="PatrolArchetypes">
 			<object name="Patrol">
-				<field hash="E6655990" type="String"/>
+				<field name="text_archArchetype" type="String"/>
 				<field name="archArchetype" type="BinHex"/>
 			</object>
 		</object>
 		<object name="DispatchArchetypes">
 			<object name="Dispatch">
-				<field hash="E6655990" type="String"/>
+				<field name="text_archArchetype" type="String"/>
 				<field name="archArchetype" type="BinHex"/>
 			</object>
 		</object>
 		<object name="OperatorArchetypes">
 			<object name="Operator">
-				<field hash="E6655990" type="String"/>
+				<field name="text_archArchetype" type="String"/>
 				<field name="archArchetype" type="BinHex"/>
 			</object>
 		</object>

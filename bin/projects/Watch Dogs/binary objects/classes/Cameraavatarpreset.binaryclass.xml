@@ -72,7 +72,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -168,7 +168,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -314,7 +314,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -444,7 +444,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -527,7 +527,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -610,7 +610,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -787,7 +787,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -870,7 +870,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -1049,7 +1049,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -1791,7 +1791,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -1965,7 +1965,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -2301,7 +2301,7 @@
 					<field name="fValue" type="Float"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -2811,7 +2811,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -2894,7 +2894,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -2977,7 +2977,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
@@ -3060,7 +3060,7 @@
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>
-				<object hash="D0558B01">
+				<object name="Fov">
 					<field name="vectorValue" type="Vector3"/>
 					<field name="selValueType" type="Enum"/>
 				</object>

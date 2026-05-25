@@ -6,7 +6,7 @@
 	<field name="hidKey" type="BinHex"/>
 	<object name="WrinkleMaskSet">
 		<object name="WrinkleMask">
-			<field hash="A14DADC6" type="String"/>
+			<field name="text_fileMaskTextureFileName" type="String"/>
 			<field name="fileMaskTextureFileName" type="BinHex"/>
 			<field name="selMaskType" type="Enum"/>
 			<object name="BoneIntensityInput">

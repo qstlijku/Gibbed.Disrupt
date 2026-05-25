@@ -156,9 +156,9 @@
 			<field name="sndGroupSoundId" type="BinHex"/>
 		</object>
 		<object name="ActivityConversation">
-			<field hash="1AFF3D7C" type="String"/>
+			<field name="text_ConversationBark" type="String"/>
 			<field name="ConversationBark" type="BinHex"/>
-			<field hash="D2F37DB2" type="String"/>
+			<field name="text_ConversationTrigger" type="String"/>
 			<field name="ConversationTrigger" type="BinHex"/>
 		</object>
 		<object name="CraftingComponentItems">

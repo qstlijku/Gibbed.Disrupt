@@ -279,14 +279,14 @@
 						<field name="uiMinutes" type="Int64"/>
 						<field name="uiSeconds" type="Int64"/>
 					</object>
-					<object hash="38B17551">
+					<object name="End">
 						<field name="uiHours" type="Int64"/>
 						<field name="uiMinutes" type="Int64"/>
 						<field name="uiSeconds" type="Int64"/>
 					</object>
 				</object>
 				<object name="Voices">
-					<field hash="080CC0D6" type="String"/>
+					<field name="text_Start" type="String"/>
 					<field name="Start" type="BinHex"/>
 					<object name="Level">
 						<object name="Voices">
@@ -336,10 +336,10 @@
 					<field name="hidKey" type="BinHex"/>
 					<object name="PostFxList">
 						<object name="PostFx">
-							<field hash="F1B1D97B" type="String"/>
+							<field name="text_sName" type="String"/>
 							<field name="sName" type="BinHex"/>
 							<field name="bLoopMainSequence" type="Boolean"/>
-							<field hash="8409F0DB" type="String"/>
+							<field name="text_fileMainSequencePath" type="String"/>
 							<field name="fileMainSequencePath" type="BinHex"/>
 							<field name="fileFadeInSequencePath" type="BinHex"/>
 							<field name="fileFadeOutSequencePath" type="BinHex"/>
@@ -485,7 +485,7 @@
 					<field name="colorChase" type="Vector3"/>
 					<field name="fIconAlpha" type="Float"/>
 				</object>
-				<object hash="824A23BA">
+				<object name="FX">
 					<field hash="04C4E1DD" type="String"/>
 					<field name="psAppearFX" type="BinHex"/>
 					<field hash="A592D6DB" type="String"/>
@@ -532,7 +532,7 @@
 						</object>
 					</object>
 				</object>
-				<object hash="522878BE">
+				<object name="SFX">
 					<field hash="E0F6CBFA" type="String"/>
 					<field name="sBarkPlayerIsHurt" type="BinHex"/>
 					<field name="sndPickupOpen" type="BinHex"/>
@@ -568,11 +568,11 @@
 						</object>
 					</object>
 					<object name="AmmoLimiter">
-						<field hash="A6604358" type="String"/>
+						<field name="text_archWeapon" type="String"/>
 						<field name="archWeapon" type="BinHex"/>
 						<field name="uiAmmoCount" type="Int64"/>
 						<object name="AmmoLimiter">
-							<field hash="A6604358" type="String"/>
+							<field name="text_archWeapon" type="String"/>
 							<field name="archWeapon" type="BinHex"/>
 							<field name="uiAmmoCount" type="Int64"/>
 						</object>
@@ -1042,7 +1042,7 @@
 				</object>
 				<object name="Weakpoints">
 					<object name="ListOfBones">
-						<field hash="ED024EFD" type="BinHex"/>
+						<field name="nID" type="BinHex"/>
 						<object name="Bones">
 							<field name="bHead" type="Boolean"/>
 							<field name="bShoulder" type="Boolean"/>
@@ -1061,8 +1061,8 @@
 				</object>
 				<object name="Cyborgs">
 					<object name="Archetypes">
-						<field hash="ED024EFD" type="BinHex"/>
-						<field hash="F1B1D97B" type="String"/>
+						<field name="nID" type="BinHex"/>
+						<field name="text_sName" type="String"/>
 						<field name="sName" type="BinHex"/>
 						<field name="nWeakpoint" type="Int32"/>
 						<field name="nSpeed" type="Int32"/>
@@ -1182,10 +1182,10 @@
 					<field name="hidKey" type="BinHex"/>
 					<object name="PostFxList">
 						<object name="PostFx">
-							<field hash="F1B1D97B" type="String"/>
+							<field name="text_sName" type="String"/>
 							<field name="sName" type="BinHex"/>
 							<field name="bLoopMainSequence" type="Boolean"/>
-							<field hash="8409F0DB" type="String"/>
+							<field name="text_fileMainSequencePath" type="String"/>
 							<field name="fileMainSequencePath" type="BinHex"/>
 							<field name="fileFadeInSequencePath" type="BinHex"/>
 							<field name="fileFadeOutSequencePath" type="BinHex"/>
@@ -1402,7 +1402,7 @@
 					<object name="ListOfCyborgs">
 						<object name="Settings">
 							<field name="nArchetype" type="Int32"/>
-							<field hash="F1B1D97B" type="String"/>
+							<field name="text_sName" type="String"/>
 							<field name="sName" type="BinHex"/>
 							<field name="nCount" type="Int32"/>
 							<field name="bUpdateStealth" type="Boolean"/>
@@ -1616,12 +1616,12 @@
 					<field name="hidKey" type="BinHex"/>
 					<object name="PostFxList">
 						<object name="PostFx">
-							<field hash="F1B1D97B" type="String"/>
+							<field name="text_sName" type="String"/>
 							<field name="sName" type="BinHex"/>
 							<field name="bLoopMainSequence" type="Boolean"/>
-							<field hash="8409F0DB" type="String"/>
+							<field name="text_fileMainSequencePath" type="String"/>
 							<field name="fileMainSequencePath" type="BinHex"/>
-							<field hash="261C12F1" type="String"/>
+							<field name="text_fileFadeInSequencePath" type="String"/>
 							<field name="fileFadeInSequencePath" type="BinHex"/>
 							<field name="fileFadeOutSequencePath" type="BinHex"/>
 						</object>
@@ -1664,7 +1664,7 @@
 			<field name="gpctxspecGameplayContext" type="BinHex"/>
 			<field name="bMuteAudioSystem" type="Boolean"/>
 			<field name="bEnableFakeTraffic" type="Boolean"/>
-			<field hash="86EF049E" type="String"/>
+			<field name="text_archVehicleArchetype" type="String"/>
 			<field name="archVehicleArchetype" type="BinHex"/>
 			<object name="AdditonalInfo">
 				<field hash="947CCDF4" type="String"/>

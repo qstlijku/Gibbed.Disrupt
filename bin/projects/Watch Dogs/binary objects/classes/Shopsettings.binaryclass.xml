@@ -8,9 +8,9 @@
 	<field name="bAutoNavUseTargetAngle" type="Boolean"/>
 	<field name="fAutoNavTargetAngle" type="Float"/>
 	<field name="vectorShopkeeperSpawnOffset" type="Vector3"/>
-	<field hash="FF22650F" type="String"/>
+	<field name="text_archShopKeeper" type="String"/>
 	<field name="archShopKeeper" type="BinHex"/>
-	<field hash="32F4B348" type="String"/>
+	<field name="text_archCashRegister" type="String"/>
 	<field name="archCashRegister" type="BinHex"/>
 	<field name="bIsShopBroadcastForbidden" type="Boolean"/>
 	<field name="fTalkingReactionProbability" type="Float"/>
@@ -38,7 +38,7 @@
 	<field name="fHoldUpDistanceBeforeGoingToPanic" type="Float"/>
 	<field name="bAvailableInMP" type="Boolean"/>
 	<field name="sndStealSound" type="BinHex"/>
-	<field hash="9ED75256" type="String"/>
+	<field name="text_sPlayerGreetingsTrigger" type="String"/>
 	<field name="sPlayerGreetingsTrigger" type="BinHex"/>
 	<object name="locstridInteractionText">
 		<field name="LocalizationId" type="Int64"/>
@@ -53,9 +53,9 @@
 		<field name="fileReactionPressAlarm" type="String"/>
 	</object>
 	<object name="ShopCameras">
-		<field hash="CABE74B9" type="String"/>
+		<field name="text_fileInsideShopMenu" type="String"/>
 		<field name="fileInsideShopMenu" type="BinHex"/>
-		<field hash="1C71844F" type="String"/>
+		<field name="text_fileFugitiveMediaBroadcastInProgress" type="String"/>
 		<field name="fileFugitiveMediaBroadcastInProgress" type="BinHex"/>
 		<field hash="5B7B9C2C" type="String"/>
 		<field name="fileConsumingAdrenalineCameraAnimation" type="BinHex"/>

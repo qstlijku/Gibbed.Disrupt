@@ -499,12 +499,12 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
 			</object>
-			<object hash="B7AD94E4">
+			<object name="TargetInCover">
 				<field name="iNumberOfContributingUnits" type="Int32"/>
 				<object name="ChoreographyUnits">
 					<object name="Unit">
@@ -523,7 +523,7 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
@@ -552,12 +552,12 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
 			</object>
-			<object hash="B7AD94E4">
+			<object name="TargetInCover">
 				<field name="iNumberOfContributingUnits" type="Int32"/>
 				<object name="ChoreographyUnits">
 					<object name="Unit">
@@ -576,7 +576,7 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
@@ -603,12 +603,12 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
 			</object>
-			<object hash="B7AD94E4">
+			<object name="TargetInCover">
 				<field name="iNumberOfContributingUnits" type="Int32"/>
 				<object name="ChoreographyUnits">
 					<object name="Unit">
@@ -627,7 +627,7 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
@@ -654,12 +654,12 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
 			</object>
-			<object hash="B7AD94E4">
+			<object name="TargetInCover">
 				<field name="iNumberOfContributingUnits" type="Int32"/>
 				<object name="ChoreographyUnits">
 					<object name="Unit">
@@ -678,7 +678,7 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
@@ -705,12 +705,12 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
 			</object>
-			<object hash="B7AD94E4">
+			<object name="TargetInCover">
 				<field name="iNumberOfContributingUnits" type="Int32"/>
 				<object name="ChoreographyUnits">
 					<object name="Unit">
@@ -729,7 +729,7 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
@@ -756,12 +756,12 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
 			</object>
-			<object hash="B7AD94E4">
+			<object name="TargetInCover">
 				<field name="iNumberOfContributingUnits" type="Int32"/>
 				<object name="ChoreographyUnits">
 					<object name="Unit">
@@ -780,7 +780,7 @@
 						<field name="fShotDelayMin" type="Float"/>
 						<field name="fShotDelayMax" type="Float"/>
 						<field name="fMaxLength" type="Float"/>
-						<field hash="8DFC2232" type="String"/>
+						<field name="sPatternName" type="String"/>
 						<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
 					</object>
 				</object>
@@ -859,7 +859,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 			<object name="Aiming">
@@ -906,7 +906,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 			<object name="Cover">
@@ -991,7 +991,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 		</object>
@@ -1040,7 +1040,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 			<object name="Aiming">
@@ -1087,7 +1087,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 			<object name="Cover">
@@ -1172,7 +1172,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 		</object>
@@ -1221,7 +1221,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 			<object name="Aiming">
@@ -1268,7 +1268,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 			<object name="Cover">
@@ -1353,7 +1353,7 @@
 					<field name="fShotDelayMin" type="Float"/>
 					<field name="fShotDelayMax" type="Float"/>
 					<field name="fMaxLength" type="Float"/>
-					<field hash="8DFC2232" type="String"/>
+					<field name="sPatternName" type="String"/>
 				</object>
 			</object>
 		</object>

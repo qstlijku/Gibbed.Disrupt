@@ -16,11 +16,11 @@
 	<field name="logmatDefaultEffectMaterial" type="BinHex"/>
 	<object name="HangParams">
 		<field name="sndHangSound" type="BinHex"/>
-		<field hash="6C454459" type="String"/>
+		<field name="text_psHangParticle" type="String"/>
 		<field name="psHangParticle" type="BinHex"/>
 		<field name="fHealthPercentageThreshold" type="Float"/>
 		<field name="bHangParticleUseVelocity" type="Boolean"/>
-		<field hash="5E5C1ADE" type="String"/>
+		<field name="text_sHangParticleBoneName" type="String"/>
 		<field name="sHangParticleBoneName" type="BinHex"/>
 		<field name="sndHangingVelocitySound" type="BinHex"/>
 		<field name="fHangingVelocitySoundThreshold" type="Float"/>
@@ -42,10 +42,10 @@
 	</object>
 	<object name="DetachParams">
 		<field name="sndDetachSound" type="BinHex"/>
-		<field hash="6207F45F" type="String"/>
+		<field name="text_psDetachParticle" type="String"/>
 		<field name="psDetachParticle" type="BinHex"/>
 		<field name="bDetachParticleUseVelocity" type="Boolean"/>
-		<field hash="95692E8B" type="String"/>
+		<field name="text_sDetachParticleBoneName" type="String"/>
 		<field name="sDetachParticleBoneName" type="BinHex"/>
 		<field name="fFloatingScale" type="Float"/>
 		<field name="fWaterFriction" type="Float"/>
@@ -53,7 +53,7 @@
 	</object>
 	<object name="TextureStateChanges">
 		<object name="TextureStateChange">
-			<field hash="8A6739BA" type="String"/>
+			<field name="text_psParticle" type="String"/>
 			<field name="psParticle" type="BinHex"/>
 			<field name="sndSound" type="BinHex"/>
 			<field name="fHealthPercentageThreshold" type="Float"/>

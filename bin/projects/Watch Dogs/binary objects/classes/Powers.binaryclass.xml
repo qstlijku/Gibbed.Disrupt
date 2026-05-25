@@ -177,7 +177,7 @@
 		<object name="DisruptCommSpecific">
 			<field name="sndDisruptionSound" type="BinHex"/>
 			<field name="sCinemaPostFxName" type="BinHex"/>
-			<field hash="93D2AFB5" type="String"/>
+			<field name="text_psParticleSystem" type="String"/>
 			<field name="psParticleSystem" type="BinHex"/>
 			<field name="vectorParticleSystemRelativeLocation" type="Vector3"/>
 			<field name="fMediaGlitchDuration" type="Float"/>
@@ -186,7 +186,7 @@
 			<field name="fDisruptDuration" type="Float"/>
 			<field name="fEnemyPlayerSlowDownloadFactor" type="Float"/>
 			<object name="DisruptionIcon">
-				<field hash="33E4567C" type="String"/>
+				<field name="text_fileIconTexture" type="String"/>
 				<field name="fileIconTexture" type="BinHex"/>
 			</object>
 		</object>

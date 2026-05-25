@@ -4,7 +4,7 @@
 	<field name="text_hidName" type="String"/>
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
-	<field hash="C0BB2BBB" type="String"/>
+	<field name="text_fileConvTableFile" type="String"/>
 	<field name="fileConvTableFile" type="BinHex"/>
 	<object name="EpisodeRanges">
 		<object name="Ranges">
@@ -16,9 +16,9 @@
 		</object>
 	</object>
 	<object name="TestConversation">
-		<field hash="7BEEDA78" type="String"/>
+		<field name="text_archMasterArchetype" type="String"/>
 		<field name="archMasterArchetype" type="BinHex"/>
-		<field hash="11B39233" type="String"/>
+		<field name="text_archSlaveArchetype" type="String"/>
 		<field name="archSlaveArchetype" type="BinHex"/>
 		<field hash="41EB37F6" type="String"/>
 		<field name="fileMasterAnimation" type="BinHex"/>

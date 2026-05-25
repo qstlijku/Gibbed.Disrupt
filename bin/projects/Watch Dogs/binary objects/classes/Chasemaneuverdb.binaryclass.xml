@@ -33,7 +33,7 @@
 			<field name="fAggressionLevel" type="Float"/>
 		</object>
 	</object>
-	<object hash="D47F142B">
+	<object name="SUV">
 		<object name="SideRam">
 			<field name="fAggressionLevel" type="Float"/>
 		</object>

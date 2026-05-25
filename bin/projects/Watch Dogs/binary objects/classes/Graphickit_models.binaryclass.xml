@@ -17,7 +17,7 @@
 			<field name="selPoseDefinitionId" type="Enum"/>
 			<field name="selMaterialOverridesId" type="Enum"/>
 			<object name="BoneAnchor">
-				<field hash="795F32D4" type="String"/>
+				<field name="text_BoneName" type="String"/>
 				<field name="BoneName" type="BinHex"/>
 				<field name="vectorTranslation" type="Vector3"/>
 				<field name="angvecRotation" type="Vector3"/>
@@ -28,7 +28,7 @@
 	<object name="AgeRange">
 		<field name="agerangeAgeRangeOverride" type="BinHex"/>
 		<field name="Start" type="BinHex"/>
-		<field hash="38B17551" type="BinHex"/>
+		<field name="End" type="BinHex"/>
 	</object>
 	<object name="Tags">
 		<object name="Tag">
@@ -42,7 +42,7 @@
 			<field name="selPoseDefinitionId" type="Enum"/>
 			<field name="selMaterialOverridesId" type="Enum"/>
 			<object name="BoneAnchor">
-				<field hash="795F32D4" type="String"/>
+				<field name="text_BoneName" type="String"/>
 				<field name="BoneName" type="BinHex"/>
 				<field name="vectorTranslation" type="Vector3"/>
 				<field name="angvecRotation" type="Vector3"/>
@@ -57,7 +57,7 @@
 			<field name="selPoseDefinitionId" type="Enum"/>
 			<field name="selMaterialOverridesId" type="Enum"/>
 			<object name="BoneAnchor">
-				<field hash="795F32D4" type="String"/>
+				<field name="text_BoneName" type="String"/>
 				<field name="BoneName" type="BinHex"/>
 				<field name="vectorTranslation" type="Vector3"/>
 				<field name="angvecRotation" type="Vector3"/>

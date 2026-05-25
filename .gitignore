@@ -10,3 +10,9 @@ bin/*.pdb
 *.dat
 *.fat
 */*_unpack
+/bin/projects/WDL/binary objects/classes
+/bin/projects/WDL/binary objects/files
+/bin
+/generic_refs_missing_schemas
+/scaffolded_schemas
+/scripts/__pycache__

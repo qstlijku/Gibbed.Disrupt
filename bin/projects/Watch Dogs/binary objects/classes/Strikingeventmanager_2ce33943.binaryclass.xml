@@ -24,7 +24,7 @@
 	</object>
 	<object name="UpdateGroups">
 		<object name="UpdateGroup">
-			<field hash="361EE9C1" type="String"/>
+			<field name="text_sGroupName" type="String"/>
 			<field name="sGroupName" type="BinHex"/>
 			<object name="StrikingEventsList">
 				<object name="strikingeventStrikingEvent">

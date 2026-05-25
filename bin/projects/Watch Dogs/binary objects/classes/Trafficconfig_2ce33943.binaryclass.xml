@@ -1073,7 +1073,7 @@
 		</object>
 	</object>
 	<object name="DefaultGameplayContext">
-		<field hash="6C748C6E" type="BinHex"/>
-		<field hash="159EC046" type="BinHex"/>
+		<field name="gpctxspecNormal" type="BinHex"/>
+		<field name="gpctxspecHighEnd" type="BinHex"/>
 	</object>
 </class>

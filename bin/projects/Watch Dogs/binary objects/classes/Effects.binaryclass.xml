@@ -6,10 +6,10 @@
 	<field name="hidKey" type="BinHex"/>
 	<field name="fMaxDistanceToCamera" type="Float"/>
 	<object name="Puddles">
-		<field hash="721FE9DB" type="String"/>
+		<field name="text_psSplashParticleResId" type="String"/>
 		<field name="psSplashParticleResId" type="BinHex"/>
 		<field name="psSplashTrailParticleResId" type="BinHex"/>
-		<field hash="3E50598A" type="String"/>
+		<field name="text_psTwoWheeledSplashParticleResId" type="String"/>
 		<field name="psTwoWheeledSplashParticleResId" type="BinHex"/>
 		<field name="psTwoWheeledsplashTrailParticleResId" type="BinHex"/>
 		<object name="PuddleTweaks">
@@ -25,7 +25,7 @@
 	</object>
 	<object name="Leaves">
 		<field name="psLeavesParticleResId" type="BinHex"/>
-		<field hash="70C607D1" type="String"/>
+		<field name="text_psLeavesTrailParticleResId" type="String"/>
 		<field name="psLeavesTrailParticleResId" type="BinHex"/>
 		<object name="LeavesTweaks">
 			<field name="fSpawnInterval" type="Float"/>

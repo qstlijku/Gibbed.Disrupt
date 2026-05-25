@@ -24,7 +24,7 @@
 		<object name="StartPMSSettings">
 			<object name="PMSValuesOnQuit">
 				<object name="PMSValue">
-					<field hash="363F5FCE" type="String"/>
+					<field name="text_pmsPMSName" type="String"/>
 					<field name="pmsPMSName" type="BinHex"/>
 					<field name="selEnumValue" type="Enum"/>
 					<field name="fFloatValue" type="Float"/>
@@ -35,7 +35,7 @@
 		<object name="QuitSettings">
 			<object name="PMSValuesOnQuit">
 				<object name="PMSValue">
-					<field hash="363F5FCE" type="String"/>
+					<field name="text_pmsPMSName" type="String"/>
 					<field name="pmsPMSName" type="BinHex"/>
 					<field name="selEnumValue" type="Enum"/>
 					<field name="fFloatValue" type="Float"/>

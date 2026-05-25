@@ -13,14 +13,14 @@
 			<field name="fCoolDown" type="Float"/>
 			<object name="PMSValuesNeeded">
 				<object name="PMSValue">
-					<field hash="363F5FCE" type="String"/>
+					<field name="text_pmsPMSName" type="String"/>
 					<field name="pmsPMSName" type="BinHex"/>
 					<field name="selEnumValue" type="Enum"/>
 				</object>
 			</object>
 			<object name="PMSValuesExcluded">
 				<object name="PMSValue">
-					<field hash="363F5FCE" type="String"/>
+					<field name="text_pmsPMSName" type="String"/>
 					<field name="pmsPMSName" type="BinHex"/>
 					<field name="bBoolValue" type="Boolean"/>
 					<field name="selEnumValue" type="Enum"/>
@@ -33,7 +33,7 @@
 		<field name="fMaxCoolDown" type="Float"/>
 		<field name="fMinDistToPlayer" type="Float"/>
 		<field name="fMaxDistToPlayer" type="Float"/>
-		<field hash="9185455A" type="String"/>
+		<field name="text_sBark" type="String"/>
 		<field name="sBark" type="BinHex"/>
 	</object>
 	<object name="WallaSettings">
@@ -64,23 +64,23 @@
 		</object>
 	</object>
 	<object name="DebugGPSTexture">
-		<field hash="33E4567C" type="String"/>
+		<field name="text_fileIconTexture" type="String"/>
 		<field name="fileIconTexture" type="BinHex"/>
 	</object>
 	<object name="DebugGPSTextureWalker">
-		<field hash="33E4567C" type="String"/>
+		<field name="text_fileIconTexture" type="String"/>
 		<field name="fileIconTexture" type="BinHex"/>
 	</object>
 	<object name="DebugGPSTextureEnticer">
-		<field hash="33E4567C" type="String"/>
+		<field name="text_fileIconTexture" type="String"/>
 		<field name="fileIconTexture" type="BinHex"/>
 	</object>
 	<object name="DebugGPSTextureAttracted">
-		<field hash="33E4567C" type="String"/>
+		<field name="text_fileIconTexture" type="String"/>
 		<field name="fileIconTexture" type="BinHex"/>
 	</object>
 	<object name="DebugGPSTextureInCar">
-		<field hash="33E4567C" type="String"/>
+		<field name="text_fileIconTexture" type="String"/>
 		<field name="fileIconTexture" type="BinHex"/>
 	</object>
 </class>

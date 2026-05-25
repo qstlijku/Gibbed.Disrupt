@@ -28,7 +28,7 @@
 					</object>
 				</object>
 				<object name="Process">
-					<field hash="95DE01BE" type="String"/>
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
 					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
 					<object name="Values"/>
 				</object>
@@ -43,7 +43,7 @@
 					</object>
 				</object>
 				<object name="Process">
-					<field hash="95DE01BE" type="String"/>
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
 					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
 					<object name="Values"/>
 				</object>
@@ -58,7 +58,7 @@
 					</object>
 				</object>
 				<object name="Process">
-					<field hash="95DE01BE" type="String"/>
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
 					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
 					<object name="Values">
 						<field name="bInWaterRequired" type="Boolean"/>
@@ -91,7 +91,7 @@
 					</object>
 				</object>
 				<object name="Process">
-					<field hash="95DE01BE" type="String"/>
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
 					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
 					<object name="Values"/>
 				</object>
@@ -106,7 +106,7 @@
 					</object>
 				</object>
 				<object name="Process">
-					<field hash="95DE01BE" type="String"/>
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
 					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
 					<object name="Values"/>
 				</object>
@@ -121,7 +121,7 @@
 					</object>
 				</object>
 				<object name="Process">
-					<field hash="95DE01BE" type="String"/>
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
 					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
 					<object name="Values">
 						<field name="bInWaterRequired" type="Boolean"/>

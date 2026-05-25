@@ -4,11 +4,11 @@
 	<field name="text_hidName" type="String"/>
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
-	<field hash="1ED81C8C" type="String"/>
+	<field name="text_actiontrackeridActionTrackerId" type="String"/>
 	<field name="actiontrackeridActionTrackerId" type="BinHex"/>
 	<object name="ActionTrackerDatabase">
 		<field name="bAddOnGameStart" type="Boolean"/>
-		<field hash="1ED81C8C" type="String"/>
+		<field name="text_actiontrackeridActionTrackerId" type="String"/>
 		<field name="actiontrackeridActionTrackerId" type="BinHex"/>
 		<field name="uiCount" type="Int64"/>
 		<field name="uiExecuteCount" type="Int64"/>

@@ -21,7 +21,7 @@
                 <object name="Tracks">
                     <object name="Track">
                         <object name="Track">
-                            <field hash="CF68E402" type="String"/>
+                            <field name="text_hid_DTCTH_ClassName" type="String"/>
                             <field name="hid_DTCTH_ClassName"/>
                             <field name="Name" type="String"/>
                             <field name="Master"/>
@@ -48,7 +48,7 @@
                 <field name="PostFxPriority"/>
             </object>
             <object name="Generic">
-                <field hash="1CB97581" type="String"/>
+                <field name="text_fileTexture" type="String"/>
                 <field name="fileTexture"/>
                 <field name="UseTexture" type="Boolean"/>
                 <field name="NeedsMask" type="Boolean"/>
@@ -76,7 +76,7 @@
                 <object name="Tracks">
                     <object name="Track">
                         <object name="Track">
-                            <field hash="CF68E402" type="String"/>
+                            <field name="text_hid_DTCTH_ClassName" type="String"/>
                             <field name="hid_DTCTH_ClassName"/>
                             <field name="Name" type="String"/>
                             <field name="Master"/>

@@ -4,7 +4,7 @@
 	<field name="text_hidName" type="String"/>
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
-	<field hash="F1B1D97B" type="String"/>
+	<field name="text_sName" type="String"/>
 	<field name="sName" type="BinHex"/>
 	<object name="curveHighSpeedCurve">
 		<field name="hidNumKnots" type="BinHex"/>

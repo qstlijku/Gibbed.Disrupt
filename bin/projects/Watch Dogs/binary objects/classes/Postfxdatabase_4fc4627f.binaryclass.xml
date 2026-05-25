@@ -4,10 +4,10 @@
 	<field name="text_hidName" type="String"/>
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
-	<object hash="3038DFBA">
-		<object hash="824A23BA">
-			<field hash="79DF125A" type="String"/>
-			<field hash="6A653E5E" type="BinHex"/>
+	<object name="FXs">
+		<object name="FX">
+			<field name="text_sFX" type="String"/>
+			<field name="sFX" type="BinHex"/>
 			<field name="fPriority" type="Float"/>
 			<field name="sLoopSequence" type="String"/>
 			<field name="selIntensityControl" type="Enum"/>

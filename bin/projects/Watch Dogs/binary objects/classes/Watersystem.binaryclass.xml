@@ -13,7 +13,7 @@
 		<field name="fReflectionIntensity" type="Float"/>
 		<field name="fWaterTransparencyDepth" type="Float"/>
 		<field name="fFoamTextureScale" type="Float"/>
-		<field hash="FC6D9E45" type="String"/>
+		<field name="text_fileFoamTexture" type="String"/>
 		<field name="fileFoamTexture" type="BinHex"/>
 		<field name="fileDebrisTexture" type="BinHex"/>
 	</object>

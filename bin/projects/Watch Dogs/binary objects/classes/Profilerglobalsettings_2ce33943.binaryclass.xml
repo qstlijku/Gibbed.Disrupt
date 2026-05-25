@@ -30,7 +30,7 @@
 	<field name="sndBehaviorAnalysisActivation" type="BinHex"/>
 	<field name="fDelayBeforeSendingDominoEvent" type="Float"/>
 	<field name="colorProfilerPortraitBackgroundColor" type="Vector4"/>
-	<field hash="6296328F" type="String"/>
+	<field name="text_sCinemaPostFx" type="String"/>
 	<field name="sCinemaPostFx" type="BinHex"/>
 	<field name="fRewardPanelTextEffectDuration" type="Float"/>
 	<field name="fOthersLinesTextEffectDelay" type="Float"/>
@@ -96,9 +96,9 @@
 		<field name="fCamFieldOfViewVariance" type="Float"/>
 		<object name="Poses">
 			<object name="Pose">
-				<field hash="01D698D6" type="String"/>
+				<field name="text_fileProfilerPortraitAnimRes" type="String"/>
 				<field name="fileProfilerPortraitAnimRes" type="BinHex"/>
-				<field hash="E4C77BC5" type="String"/>
+				<field name="text_fileProfilerPortraitPoseRes" type="String"/>
 				<field name="fileProfilerPortraitPoseRes" type="BinHex"/>
 				<field name="selGender" type="Enum"/>
 			</object>
@@ -113,9 +113,9 @@
 		<field name="sndvarProfilerAmbienceRTPC" type="BinHex"/>
 		<field name="uRecordCaseNbMin" type="Int64"/>
 		<field name="uRecordCaseNbMax" type="Int64"/>
-		<field hash="012B9F7A" type="String"/>
+		<field name="text_fileProfilerThumbnailOverride" type="String"/>
 		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
-		<field hash="81217E4B" type="String"/>
+		<field name="text_fileProfilerThumbnailOverrideBlackout" type="String"/>
 		<field name="fileProfilerThumbnailOverrideBlackout" type="BinHex"/>
 		<field hash="0C97FD1F" type="String"/>
 		<field name="fileProfilerThumbnailOverrideCompanion" type="BinHex"/>
@@ -166,7 +166,7 @@
 		<field name="fMaxDistanceBetweenEntities" type="Float"/>
 		<field name="fLineWidth" type="Float"/>
 		<field name="bUseRandomTextureMaskCycling" type="Boolean"/>
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
 		<field name="fMaskTextureScale" type="Float"/>
 		<field name="fRandomOffsetRange" type="Float"/>
@@ -174,7 +174,7 @@
 		<field name="bUseOcclusion" type="Boolean"/>
 		<object name="MaskTextures">
 			<object name="fileTexture">
-				<field hash="1CB97581" type="String"/>
+				<field name="text_fileTexture" type="String"/>
 				<field name="fileTexture" type="BinHex"/>
 			</object>
 		</object>
@@ -313,7 +313,7 @@
 		</object>
 	</object>
 	<object name="MyPerkLineSettings">
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
 		<field name="fWorldOffset" type="Float"/>
 		<field name="fTimedLineDuration" type="Float"/>
@@ -342,9 +342,9 @@
 		</object>
 	</object>
 	<object name="DownloadLineSettings">
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
-		<field hash="33E4567C" type="String"/>
+		<field name="text_fileIconTexture" type="String"/>
 		<field name="fileIconTexture" type="BinHex"/>
 		<field name="fWorldOffset" type="Float"/>
 		<object name="curveLineWidthOverDist">
@@ -359,9 +359,9 @@
 		</object>
 	</object>
 	<object name="TeamBoostLineSettings">
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
-		<field hash="33E4567C" type="String"/>
+		<field name="text_fileIconTexture" type="String"/>
 		<field name="fileIconTexture" type="BinHex"/>
 		<field name="fWorldOffset" type="Float"/>
 		<object name="curveLineWidthOverDist">
@@ -376,9 +376,9 @@
 		</object>
 	</object>
 	<object name="DataTheftLineSettings">
-		<field hash="1F8062E2" type="String"/>
+		<field name="text_fileLineTexture" type="String"/>
 		<field name="fileLineTexture" type="BinHex"/>
-		<field hash="33E4567C" type="String"/>
+		<field name="text_fileIconTexture" type="String"/>
 		<field name="fileIconTexture" type="BinHex"/>
 		<field name="fWorldOffset" type="Float"/>
 		<object name="curveLineWidthOverDist">
@@ -450,7 +450,7 @@
 		</object>
 	</object>
 	<object name="VideoFile">
-		<field hash="5B5B2C23" type="String"/>
+		<field name="text_matDefaultMaterial" type="String"/>
 		<field name="matDefaultMaterial" type="BinHex"/>
 	</object>
 </class>

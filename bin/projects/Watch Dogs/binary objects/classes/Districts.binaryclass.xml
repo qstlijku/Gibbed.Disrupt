@@ -59,9 +59,9 @@
 		<field name="districteventlimDistrictEventLimitations" type="BinHex"/>
 	</object>
 	<object name="Environment">
-		<field hash="87240DA0" type="String"/>
+		<field name="text_fileDayReflectionTexture" type="String"/>
 		<field name="fileDayReflectionTexture" type="BinHex"/>
-		<field hash="BFC20A48" type="String"/>
+		<field name="text_fileNightReflectionTexture" type="String"/>
 		<field name="fileNightReflectionTexture" type="BinHex"/>
 	</object>
 </class>

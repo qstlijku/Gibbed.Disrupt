@@ -16,7 +16,7 @@
 			<field name="fMinStrengthToExit" type="Float"/>
 			<field name="fReactChance" type="Float"/>
 			<field name="fReactInsideChance" type="Float"/>
-			<field hash="AC5CD011" type="String"/>
+			<field name="text_BarkId" type="String"/>
 			<field name="BarkId" type="BinHex"/>
 			<field name="selBarkPriority" type="Enum"/>
 			<field name="fCollisionCylinderRadiusOverride" type="Float"/>
@@ -27,11 +27,11 @@
 			<field name="vec2DuckDotDistances" type="Vector2"/>
 		</object>
 		<object name="CarjackingSettings">
-			<field hash="56FDDEDA" type="String"/>
+			<field name="text_sPlayerNoGunBarkId" type="String"/>
 			<field name="sPlayerNoGunBarkId" type="BinHex"/>
-			<field hash="AAFAAF29" type="String"/>
+			<field name="text_sPlayerGunBarkId" type="String"/>
 			<field name="sPlayerGunBarkId" type="BinHex"/>
-			<field hash="D37B3EC3" type="String"/>
+			<field name="text_sPlayerAsAFixerBarkId" type="String"/>
 			<field name="sPlayerAsAFixerBarkId" type="BinHex"/>
 			<field name="selBarkPriority" type="Enum"/>
 		</object>
@@ -127,7 +127,7 @@
 	<object name="ThreatLevels">
 		<field name="fDuckReactionThreatLevel" type="Float"/>
 		<field name="fDriveAwayReactionThreatLevel" type="Float"/>
-		<field hash="897D2D5A" type="BinHex"/>
+		<field name="fFleeReactionThreatLevel" type="BinHex"/>
 	</object>
 	<object name="ThreatReactionsSettings">
 		<object name="Gunshot">
@@ -146,7 +146,7 @@
 			<field name="fMaxZDiff" type="Float"/>
 			<field name="vec2VisibleAnglesDistances" type="Vector2"/>
 			<field name="fMmaxVisibleRange" type="Float"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="fBarkDelay" type="Float"/>
 			<field name="selBarkPriority" type="Enum"/>
@@ -167,7 +167,7 @@
 			<field name="fMaxZDiff" type="Float"/>
 			<field name="vec2VisibleAnglesDistances" type="Vector2"/>
 			<field name="fMmaxVisibleRange" type="Float"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="fBarkDelay" type="Float"/>
 			<field name="selBarkPriority" type="Enum"/>
@@ -188,7 +188,7 @@
 			<field name="fMaxZDiff" type="Float"/>
 			<field name="vec2VisibleAnglesDistances" type="Vector2"/>
 			<field name="fMmaxVisibleRange" type="Float"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="fBarkDelay" type="Float"/>
 			<field name="selBarkPriority" type="Enum"/>
@@ -209,7 +209,7 @@
 			<field name="fMaxZDiff" type="Float"/>
 			<field name="vec2VisibleAnglesDistances" type="Vector2"/>
 			<field name="fMmaxVisibleRange" type="Float"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="fBarkDelay" type="Float"/>
 			<field name="selBarkPriority" type="Enum"/>
@@ -230,7 +230,7 @@
 			<field name="fMaxZDiff" type="Float"/>
 			<field name="vec2VisibleAnglesDistances" type="Vector2"/>
 			<field name="fMmaxVisibleRange" type="Float"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="fBarkDelay" type="Float"/>
 			<field name="selBarkPriority" type="Enum"/>
@@ -311,7 +311,7 @@
 			<field name="fMaxZDiff" type="Float"/>
 			<field name="vec2VisibleAnglesDistances" type="Vector2"/>
 			<field name="fMmaxVisibleRange" type="Float"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="fBarkDelay" type="Float"/>
 			<field name="selBarkPriority" type="Enum"/>
@@ -340,7 +340,7 @@
 	<object name="RepeatBarksSettings">
 		<object name="Scared">
 			<field name="InitialBark" type="BinHex"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="selBarkPriority" type="Enum"/>
 			<field name="vec2InitialDelay" type="Vector2"/>
@@ -349,7 +349,7 @@
 		</object>
 		<object name="Annoyed">
 			<field name="InitialBark" type="BinHex"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="selBarkPriority" type="Enum"/>
 			<field name="vec2InitialDelay" type="Vector2"/>
@@ -357,9 +357,9 @@
 			<field name="nMaxIterations" type="Int32"/>
 		</object>
 		<object name="CollisionInsideReaction">
-			<field hash="FF155703" type="String"/>
+			<field name="text_InitialBark" type="String"/>
 			<field name="InitialBark" type="BinHex"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="selBarkPriority" type="Enum"/>
 			<field name="vec2InitialDelay" type="Vector2"/>
@@ -368,7 +368,7 @@
 		</object>
 		<object name="CollisionOutsideReaction">
 			<field name="InitialBark" type="BinHex"/>
-			<field hash="995B332C" type="String"/>
+			<field name="text_Bark" type="String"/>
 			<field name="Bark" type="BinHex"/>
 			<field name="selBarkPriority" type="Enum"/>
 			<field name="vec2InitialDelay" type="Vector2"/>
@@ -377,11 +377,11 @@
 		</object>
 	</object>
 	<object name="OasisStateNames">
-		<field hash="05C172E7" type="String"/>
+		<field name="text_Curiosity" type="String"/>
 		<field name="Curiosity" type="BinHex"/>
-		<field hash="CA558F80" type="String"/>
+		<field name="text_Anxiety" type="String"/>
 		<field name="Anxiety" type="BinHex"/>
-		<field hash="09D214CB" type="String"/>
+		<field name="text_Panic" type="String"/>
 		<field name="Panic" type="BinHex"/>
 	</object>
 </class>

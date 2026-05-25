@@ -9,7 +9,7 @@
 	<field name="iNumMaxPlaying" type="Int32"/>
 	<object name="RTPCList">
 		<object name="RTPC">
-			<field hash="0126A8E1" type="String"/>
+			<field name="text_sndrtpcRTPCType" type="String"/>
 			<field name="sndrtpcRTPCType" type="BinHex"/>
 			<field name="sndvarRTPCId" type="BinHex"/>
 		</object>
@@ -22,7 +22,7 @@
 			</object>
 			<object name="Conditions">
 				<object name="Condition">
-					<field hash="79FEFA82" type="String"/>
+					<field name="text_sndcondConditionType" type="String"/>
 					<field name="sndcondConditionType" type="BinHex"/>
 					<field name="fMinValue" type="Float"/>
 					<field name="fMaxValue" type="Float"/>

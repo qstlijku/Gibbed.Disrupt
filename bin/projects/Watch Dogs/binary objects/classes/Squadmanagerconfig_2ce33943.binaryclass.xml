@@ -6,7 +6,7 @@
 	<field name="hidKey" type="BinHex"/>
 	<object name="Squads">
 		<object name="Squad">
-			<field hash="234CF054" type="String"/>
+			<field name="text_sType" type="String"/>
 			<field name="sType" type="BinHex"/>
 			<field name="tmplDescription" type="String"/>
 		</object>

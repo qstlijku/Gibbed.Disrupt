@@ -4,7 +4,7 @@
 	<field name="text_hidName" type="String"/>
 	<field name="hidName" type="BinHex"/>
 	<field name="hidKey" type="BinHex"/>
-	<field hash="E6655990" type="BinHex"/> <!-- TODO String but crashes with all-0 -->
+	<field name="text_archArchetype" type="BinHex"/> <!-- TODO String but crashes with all-0 -->
 	<field name="archArchetype" type="BinHex"/>
 	<field name="bIsTraffic" type="Boolean"/>
 	<field name="bIsParking" type="Boolean"/>
@@ -24,12 +24,12 @@
 	</object>
 	<object name="Passenger">
 		<object name="PassengerSpec">
-			<field hash="E4C8C438" type="BinHex"/>
-			<field hash="971E88CF" type="BinHex"/>
+			<field name="graphickittagspecNormal" type="BinHex"/>
+			<field name="graphickittagspecHighEnd" type="BinHex"/>
 		</object>
 		<object name="PeopleSpawnInfo">
-			<field hash="6BC07341" type="BinHex"/>
-			<field hash="BE4849E0" type="BinHex"/>
+			<field name="peopleinfoNormal" type="BinHex"/>
+			<field name="peopleinfoHighEnd" type="BinHex"/>
 		</object>
 	</object>
 </class>

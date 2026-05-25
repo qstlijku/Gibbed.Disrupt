@@ -8,7 +8,7 @@
 		<field name="Money" type="Int64"/>
 		<field name="SkillPoint" type="Int64"/>
 		<field name="TechPoint" type="Int64"/>
-		<field hash="58D09457" type="Int64"/>
+		<field name="XP" type="Int64"/>
 		<field name="Prescription" type="Int64"/>
 		<field name="sPerkRewardIconName" type="String"/>
 		<object name="XPSettings">

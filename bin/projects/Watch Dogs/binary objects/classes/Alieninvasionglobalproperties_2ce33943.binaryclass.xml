@@ -566,7 +566,7 @@
 			<field name="bUnlockedFromStart" type="Boolean"/>
 		</object>
 	</object>
-	<object hash="891542DA">
+	<object name="UI">
 		<field name="uiLowAmmoAnimation_value_shotgun" type="Int64"/>
 		<field name="uiLowAmmoAnimation_value_assaultRifle" type="Int64"/>
 		<field name="uiLowAmmoAnimation_value_uzi" type="Int64"/>
